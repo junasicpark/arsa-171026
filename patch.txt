@@ -1,0 +1,6 @@
+﻿*** Begin Patch
+*** Update File: index.html
+@@
+-    <title>Arjuna &amp; Anisa Wedding Invitation</title>
++    <title>Arjuna &amp; Anisa - Javanese Ghibli Wedding Invitation</title>
+*** End Patch

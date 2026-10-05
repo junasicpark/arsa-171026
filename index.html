@@ -1,0 +1,3272 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Arjuna &amp; Anisa Wedding Invitation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Undangan pernikahan Arjuna dan Anisa. Mohon doa restu untuk hari bahagia kami."
+    />
+    <meta
+      name="keywords"
+      content="wedding invitation, undangan pernikahan, juna nisa"
+    />
+    <meta name="author" content="Arjuna &amp; Anisa" />
+
+    <meta property="og:title" content="Arjuna &amp; Anisa Wedding Invitation" />
+    <meta
+      property="og:description"
+      content="Dengan segala kerendahan hati, kami mengundang Anda untuk hadir di hari pernikahan kami."
+    />
+    <meta property="og:image" content="images/generated/sunset-embrace.png" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="Arjuna &amp; Anisa" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Cinzel:400,500,600,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,500,600,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Naskh+Arabic:400,600,700" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/icomoon.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!--[if lt IE 9]>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="invitation-locked">
+    <div class="fh5co-loader">
+      <div class="invitation-loader__inner">
+        <span class="invitation-loader__kicker">Wedding Invitation</span>
+        <img
+          class="invitation-loader__logo"
+          src="images/logo_white.webp"
+          alt="Logo Arjuna dan Anisa"
+        />
+        <p class="invitation-loader__text">Sedang menyiapkan hari bahagia Arjuna &amp; Anisa</p>
+        <div class="invitation-loader__dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+
+    <audio id="invitationMusic" loop preload="auto">
+      <source src="./audio/backsound.mp3" type="audio/mpeg" />
+    </audio>
+
+    <button
+      class="invitation-sound-toggle"
+      id="invitationSoundToggle"
+      type="button"
+      aria-label="Matikan suara"
+      aria-pressed="false"
+      title="Matikan suara"
+    >
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M11 5 6 9H3v6h3l5 4V5Z"></path>
+        <path class="invitation-sound-toggle__wave" d="M15.5 8.5a5 5 0 0 1 0 7"></path>
+        <path class="invitation-sound-toggle__wave" d="M18.5 5.5a9 9 0 0 1 0 13"></path>
+        <path class="invitation-sound-toggle__mute-slash" d="m15 9 6 6m0-6-6 6"></path>
+      </svg>
+    </button>
+
+    <div id="invitation-cover" class="invitation-cover is-visible" aria-hidden="false">
+
+      <!-- VIDEO BACKGROUND -->
+      <video
+        id="coverVideo"
+        class="invitation-cover__video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+      >
+        <source src="./video/cover.mp4" type="video/mp4">
+      </video>
+
+      <!-- LIGHT OVERLAY -->
+      <div class="invitation-cover__backdrop"></div>
+
+      <!-- CONTENT -->
+      <div class="invitation-cover__content">
+
+        <span class="invitation-cover__label">
+          The Wedding Of
+        </span>
+
+        <h1>
+          Arjuna &amp; Anisa
+        </h1>
+
+        <p class="invitation-cover__date">
+          Sabtu, 17 Oktober 2026
+        </p>
+
+        <div class="invitation-cover__guest">
+          <span>Kepada Yth.</span>
+          <strong id="guestName">
+            Bapak/Ibu/Saudara/i
+          </strong>
+        </div>
+
+        <p class="invitation-cover__message">
+          Di antara langit biru dan angin yang berhembus pelan,<br/>
+          sebuah kisah kecil akhirnya memulai perjalanannya.
+        </p>
+
+        <button
+          type="button"
+          id="openInvitation"
+          class="btn btn-default btn-lg invitation-cover__button"
+        >
+          <i class="icon-mail"></i>
+          Buka Undangan
+        </button>
+
+      </div>
+    </div>
+
+    <div id="rsvpFeedbackModal" class="rsvp-feedback-modal" hidden aria-hidden="true">
+      <div class="rsvp-feedback-backdrop"></div>
+      <div class="rsvp-feedback-dialog" role="dialog" aria-modal="true" aria-labelledby="rsvpFeedbackTitle">
+        <div id="rsvpFeedbackIcon" class="rsvp-feedback-icon">
+          <i class="icon-check2"></i>
+        </div>
+        <h3 id="rsvpFeedbackTitle">RSVP Berhasil</h3>
+        <p id="rsvpFeedbackMessage">Terima kasih, konfirmasi kehadiran Anda sudah tersimpan.</p>
+        <button type="button" id="closeRsvpFeedback" class="btn btn-default btn-sm">Tutup</button>
+      </div>
+    </div>
+
+    <div id="giftDetails" class="gift-modal" hidden aria-hidden="true">
+      <div class="gift-modal__backdrop"></div>
+      <section class="gift-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="giftModalTitle" tabindex="-1">
+        <header class="gift-modal__header">
+          <h2 id="giftModalTitle" class="hero-subtitle gift-modal__title">Digital Gift</h2>
+          <button type="button" class="gift-modal__close" aria-label="Tutup detail hadiah">&times;</button>
+        </header>
+        <div class="gift-modal__content">
+          <!-- Ganti nama pemilik dan data-account saat rekening final tersedia. -->
+          <div class="gift-bank-list">
+            <article class="gift-bank-card">
+              <img class="gift-bank__logo" src="images/Bank_Syariah_Indonesia.webp" alt="Logo Bank Syariah Indonesia" />
+              <p class="gift-account__owner">Arjuna Ryan Shakti W</p>
+              <div class="gift-account">
+                <span class="gift-account__number">7250427100</span>
+                <button type="button" class="gift-copy" data-account="7250427100">
+                  <span>Salin</span>
+                </button>
+              </div>
+            </article>
+            <article class="gift-bank-card">
+              <img class="gift-bank__logo" src="images/Bank_Central_Asia.webp" alt="Logo Bank Central Asia" />
+              <p class="gift-account__owner">Anisa Dwi Yunianti</p>
+              <div class="gift-account">
+                <span class="gift-account__number">1060172141</span>
+                <button type="button" class="gift-copy" data-account="1060172141">
+                  <span>Salin</span>
+                </button>
+              </div>
+            </article>
+          </div>
+          <div class="gift-modal__send">
+            <h3>Kirim Kado</h3>
+            <p>Jika berkenan mengirimkan hadiah secara langsung,<br class="gift-desktop-break" />
+              silakan hubungi kami untuk informasi pengiriman.</p>
+            <div class="gift-whatsapp-actions">
+              <a class="gift-whatsapp" href="https://wa.me/6282188183201" target="_blank" rel="noopener noreferrer">
+                <svg class="gift-whatsapp__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M12 2a9.9 9.9 0 0 0-8.48 15.02L2.2 22l5.12-1.3A10 10 0 1 0 12 2Zm0 18.18a8.15 8.15 0 0 1-4.15-1.13l-.3-.18-3.04.77.81-2.96-.2-.31A8.17 8.17 0 1 1 12 20.18Zm4.48-6.12c-.25-.13-1.48-.73-1.71-.81-.23-.09-.4-.13-.56.13-.17.25-.65.81-.8.98-.14.17-.29.19-.54.06-.25-.13-1.05-.39-2-.1-.74-.68-1.23-1.52-1.37-1.77-.14-.25-.02-.39.11-.52.11-.11.25-.29.38-.43.13-.14.17-.25.25-.42.08-.16.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43l-.48-.01c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.09 0 1.23.9 2.42 1.02 2.59.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.43.52.6.19 1.15.16 1.58.1.48-.07 1.48-.61 1.69-1.2.21-.59.21-1.1.15-1.2-.06-.11-.23-.17-.48-.29Z"/>
+                </svg>
+                <span>WhatsApp Mempelai Pria</span>
+              </a>
+              <a class="gift-whatsapp" href="https://wa.me/628164887886" target="_blank" rel="noopener noreferrer">
+                <svg class="gift-whatsapp__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M12 2a9.9 9.9 0 0 0-8.48 15.02L2.2 22l5.12-1.3A10 10 0 1 0 12 2Zm0 18.18a8.15 8.15 0 0 1-4.15-1.13l-.3-.18-3.04.77.81-2.96-.2-.31A8.17 8.17 0 1 1 12 20.18Zm4.48-6.12c-.25-.13-1.48-.73-1.71-.81-.23-.09-.4-.13-.56.13-.17.25-.65.81-.8.98-.14.17-.29.19-.54.06-.25-.13-1.05-.39-2-.1-.74-.68-1.23-1.52-1.37-1.77-.14-.25-.02-.39.11-.52.11-.11.25-.29.38-.43.13-.14.17-.25.25-.42.08-.16.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43l-.48-.01c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.09 0 1.23.9 2.42 1.02 2.59.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.43.52.6.19 1.15.16 1.58.1.48-.07 1.48-.61 1.69-1.2.21-.59.21-1.1.15-1.2-.06-.11-.23-.17-.48-.29Z"/>
+                </svg>
+                <span>WhatsApp Mempelai Wanita</span>
+              </a>
+            </div>
+          </div>
+          <p class="gift-copy-status" aria-live="polite"></p>
+        </div>
+      </section>
+    </div>
+
+    <div id="page">
+      <header
+        id="fh5co-header"
+        class="fh5co-cover"
+        role="banner"
+        style="background-image: url(images/chapter1.png); background-position: center bottom;"
+      >
+        <video
+          class="chapter-one-video"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          poster="images/chapter1.png"
+          aria-hidden="true"
+        >
+          <source src="video/chapter-one.mp4" type="video/mp4" />
+        </video>
+        <div class="overlay invitation-overlay"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1 text-center">
+              <div class="display-t">
+                <div class="display-tc hero-copy hero-intro">
+                  <span class="hero-kicker">Chapter One</span>
+                  <p class="hero-subtitle">The Beginning of Forever</p>
+                  <h1>Arjuna &amp; Anisa</h1>
+                  <h2>
+                    SABTU, 17 Oktober 2026
+                  </h2>
+                  <p class="hero-opening">
+                    Setiap perjalanan memiliki awal, setiap pertemuan memiliki cerita.
+                  </p>
+                  <div class="hero-actions">
+                    <a href="#fh5co-event-detail" class="btn btn-outline btn-sm">Lihat Detail Acara</a>
+                    <a href="#fh5co-started" class="btn btn-default btn-sm">Konfirmasi Kehadiran</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section id="fh5co-verse" class="invitation-section invitation-verse">
+        <!-- Background langit Prologue -->
+        <div class="prologue-bg" aria-hidden="true"></div>
+        <!-- Lapisan awan transparan di atas langit; masuk saat Prologue tereveal -->
+        <div class="prologue-cloud" aria-hidden="true">
+          <div class="prologue-cloud__drift"></div>
+        </div>
+        <div class="prologue-light" aria-hidden="true"></div>
+        <!-- Pita gradien warna transisi antar section (sampling aktual):
+             atas = warna dasar Chapter One, bawah = warna dasar The Main
+             Characters, sehingga tepi section tidak terpotong kasar. -->
+        <div class="prologue-fade prologue-fade--top" aria-hidden="true"></div>
+        <div class="prologue-fade prologue-fade--bottom" aria-hidden="true"></div>
+        <span class="prologue-connector" aria-hidden="true"></span>
+
+        <img class="prologue-leaf prologue-leaf--one" src="images/rsvp-leaf.png" alt="" aria-hidden="true" decoding="async" />
+        <img class="prologue-leaf prologue-leaf--two" src="images/rsvp-leaf.png" alt="" aria-hidden="true" decoding="async" />
+        <img class="prologue-leaf prologue-leaf--three" src="images/rsvp-leaf.png" alt="" aria-hidden="true" decoding="async" />
+        <img class="prologue-leaf prologue-leaf--four" src="images/rsvp-leaf.png" alt="" aria-hidden="true" decoding="async" />
+        <img class="prologue-leaf prologue-leaf--five" src="images/rsvp-leaf.png" alt="" aria-hidden="true" decoding="async" />
+        <img class="prologue-leaf prologue-leaf--six" src="images/rsvp-leaf.png" alt="" aria-hidden="true" decoding="async" />
+        <span class="prologue-dust prologue-dust--one" aria-hidden="true"></span>
+        <span class="prologue-dust prologue-dust--two" aria-hidden="true"></span>
+        <span class="prologue-dust prologue-dust--three" aria-hidden="true"></span>
+        <span class="prologue-dust prologue-dust--four" aria-hidden="true"></span>
+        <span class="prologue-dust prologue-dust--five" aria-hidden="true"></span>
+        <span class="prologue-dust prologue-dust--six" aria-hidden="true"></span>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1 text-center">
+              <div class="invitation-card invitation-verse-card prologue-intro">
+                <span class="prologue-corner prologue-corner--top-left" aria-hidden="true"></span>
+                <span class="prologue-corner prologue-corner--top-right" aria-hidden="true"></span>
+                <span class="prologue-corner prologue-corner--bottom-left" aria-hidden="true"></span>
+                <span class="prologue-corner prologue-corner--bottom-right" aria-hidden="true"></span>
+                <span class="prologue-frame-line prologue-frame-line--top" aria-hidden="true"></span>
+                <span class="prologue-frame-line prologue-frame-line--right" aria-hidden="true"></span>
+                <span class="prologue-frame-line prologue-frame-line--bottom" aria-hidden="true"></span>
+                <span class="prologue-frame-line prologue-frame-line--left" aria-hidden="true"></span>
+                <span class="hero-kicker verse-kicker prologue-reveal prologue-reveal--kicker">Prologue</span>
+                <p class="hero-subtitle verse-subtitle prologue-reveal prologue-reveal--title">Written in the Stars</p>
+                <div class="prologue-copy prologue-reveal prologue-reveal--copy">
+                  <p>
+                    Di antara luasnya langit, hembusan angin, dan perjalanan waktu,<br />
+                    Allah mempertemukan dua hati<br />
+                    untuk berjalan dalam satu kisah yang sama.
+                  </p>
+                </div>
+                <div class="prologue-divider prologue-divider--verse prologue-reveal prologue-reveal--verse-divider" aria-hidden="true"><span>✦</span></div>
+                <span class="verse-reference prologue-reveal prologue-reveal--reference">QS. Ar-Rum : 21</span>
+                <p class="verse-arabic prologue-reveal prologue-reveal--arabic" lang="ar" dir="rtl">
+                  وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا لِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَّوَدَّةً وَّرَحْمَةًۗ اِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍ لِّقَوْمٍ يَّتَفَكَّرُوْنَ ۝٢١
+                </p>
+                <p class="verse-translation prologue-reveal prologue-reveal--translation">
+                  Di antara tanda-tanda (kebesaran)-Nya ialah bahwa Dia menciptakan pasangan-pasangan untukmu dari (jenis) dirimu sendiri agar kamu merasa tenteram kepadanya. Dia menjadikan di antaramu rasa cinta dan kasih sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="fh5co-main-characters" class="invitation-section mc-section">
+        <video
+          class="mc-section__video"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          aria-hidden="true"
+        >
+          <source src="video/main-characters.mp4" type="video/mp4" />
+        </video>
+        <div class="container">
+      
+          <!-- Header -->
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1 text-center animate-box mc-header">
+              <span class="hero-kicker mc-kicker">The Main Characters</span>
+              <p class="hero-subtitle">Two Souls, One Destiny</p>
+              <p class="mc-tagline-sub">
+                Dalam kisah ini,<br>
+                dua hati dipertemukan oleh takdir, waktu, dan keimanan.<br>
+                Inilah dua jiwa di balik perjalanan ini.
+              </p>
+            </div>
+          </div>
+      
+          <!-- Cards -->
+          <div class="row mc-cards-row">
+      
+            <!-- Mempelai Pria -->
+            <div class="col-md-5 col-sm-6 mc-col animate-box">
+              <div class="mc-card" id="mc-card-groom">
+      
+                <!-- Frame Ghibli (SVG dekoratif) -->
+                <div class="mc-frame-ghibli" aria-hidden="true">
+                  <svg viewBox="0 0 280 360" xmlns="http://www.w3.org/2000/svg" class="mc-frame-svg">
+                    <g
+                        fill="none"
+                        stroke="#c8a66a"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+
+                        <!-- =========================
+                            OUTER FRAME
+                            ========================= -->
+
+                        <rect
+                          x="8"
+                          y="8"
+                          width="264"
+                          height="344"
+                          rx="5"
+                          ry="5"
+                          stroke-width="0.7"
+                          opacity="0.42"
+                        />
+
+                        <rect
+                          x="13"
+                          y="13"
+                          width="254"
+                          height="334"
+                          rx="4"
+                          ry="4"
+                          stroke-width="0.45"
+                          opacity="0.22"
+                        />
+
+
+                        <!-- =========================
+                            TOP LEFT BOTANICAL
+                            ========================= -->
+
+                        <g opacity="0.78">
+
+                          <!-- stem -->
+                          <path
+                            d="M14 45
+                              C18 34, 24 25, 37 17
+                              C45 12, 51 10, 58 10"
+                            stroke-width="0.9"
+                          />
+
+                          <!-- leaf 1 -->
+                          <path
+                            d="M25 29
+                              C20 22, 21 18, 29 18
+                              C31 23, 29 27, 25 29Z"
+                            stroke-width="0.7"
+                          />
+
+                          <!-- leaf 2 -->
+                          <path
+                            d="M33 22
+                              C32 14, 36 11, 43 14
+                              C42 19, 39 22, 33 22Z"
+                            stroke-width="0.7"
+                          />
+
+                          <!-- leaf 3 -->
+                          <path
+                            d="M42 16
+                              C44 9, 49 7, 55 11
+                              C52 15, 48 17, 42 16Z"
+                            stroke-width="0.7"
+                          />
+
+                          <!-- tiny flower -->
+                          <circle
+                            cx="18"
+                            cy="40"
+                            r="2"
+                            stroke-width="0.65"
+                          />
+
+                          <path d="M18 36 L18 44" stroke-width="0.5"/>
+                          <path d="M14 40 L22 40" stroke-width="0.5"/>
+
+                        </g>
+
+
+                        <!-- =========================
+                            TOP RIGHT BOTANICAL
+                            ========================= -->
+
+                        <g
+                          opacity="0.78"
+                          transform="translate(280 0) scale(-1 1)"
+                        >
+
+                          <path
+                            d="M14 45
+                              C18 34, 24 25, 37 17
+                              C45 12, 51 10, 58 10"
+                            stroke-width="0.9"
+                          />
+
+                          <path
+                            d="M25 29
+                              C20 22, 21 18, 29 18
+                              C31 23, 29 27, 25 29Z"
+                            stroke-width="0.7"
+                          />
+
+                          <path
+                            d="M33 22
+                              C32 14, 36 11, 43 14
+                              C42 19, 39 22, 33 22Z"
+                            stroke-width="0.7"
+                          />
+
+                          <path
+                            d="M42 16
+                              C44 9, 49 7, 55 11
+                              C52 15, 48 17, 42 16Z"
+                            stroke-width="0.7"
+                          />
+
+                          <circle
+                            cx="18"
+                            cy="40"
+                            r="2"
+                            stroke-width="0.65"
+                          />
+
+                          <path d="M18 36 L18 44" stroke-width="0.5"/>
+                          <path d="M14 40 L22 40" stroke-width="0.5"/>
+
+                        </g>
+
+
+                        <!-- =========================
+                            BOTTOM LEFT BOTANICAL
+                            ========================= -->
+
+                        <g
+                          opacity="0.65"
+                          transform="translate(0 360) scale(1 -1)"
+                        >
+
+                          <path
+                            d="M14 45
+                              C18 34, 24 25, 37 17
+                              C45 12, 51 10, 58 10"
+                            stroke-width="0.9"
+                          />
+
+                          <path
+                            d="M25 29
+                              C20 22, 21 18, 29 18
+                              C31 23, 29 27, 25 29Z"
+                            stroke-width="0.7"
+                          />
+
+                          <path
+                            d="M33 22
+                              C32 14, 36 11, 43 14
+                              C42 19, 39 22, 33 22Z"
+                            stroke-width="0.7"
+                          />
+
+                          <path
+                            d="M42 16
+                              C44 9, 49 7, 55 11
+                              C52 15, 48 17, 42 16Z"
+                            stroke-width="0.7"
+                          />
+
+                        </g>
+
+
+                        <!-- =========================
+                            BOTTOM RIGHT BOTANICAL
+                            ========================= -->
+
+                        <g
+                          opacity="0.65"
+                          transform="translate(280 360) scale(-1 -1)"
+                        >
+
+                          <path
+                            d="M14 45
+                              C18 34, 24 25, 37 17
+                              C45 12, 51 10, 58 10"
+                            stroke-width="0.9"
+                          />
+
+                          <path
+                            d="M25 29
+                              C20 22, 21 18, 29 18
+                              C31 23, 29 27, 25 29Z"
+                            stroke-width="0.7"
+                          />
+
+                          <path
+                            d="M33 22
+                              C32 14, 36 11, 43 14
+                              C42 19, 39 22, 33 22Z"
+                            stroke-width="0.7"
+                          />
+
+                          <path
+                            d="M42 16
+                              C44 9, 49 7, 55 11
+                              C52 15, 48 17, 42 16Z"
+                            stroke-width="0.7"
+                          />
+
+                        </g>
+
+
+                        <!-- =========================
+                            TOP CENTER ORNAMENT
+                            ========================= -->
+
+                        <g opacity="0.62">
+
+                          <path
+                            d="M92 13
+                              C108 8, 123 8, 140 13
+                              C157 8, 172 8, 188 13"
+                            stroke-width="0.7"
+                          />
+
+                          <path
+                            d="M113 14
+                              C123 11, 131 11, 140 15
+                              C149 11, 157 11, 167 14"
+                            stroke-width="0.55"
+                          />
+
+                          <circle
+                            cx="140"
+                            cy="14"
+                            r="1.4"
+                            fill="#c8a66a"
+                            stroke="none"
+                          />
+
+                        </g>
+
+
+                        <!-- =========================
+                            BOTTOM CENTER ORNAMENT
+                            ========================= -->
+
+                        <g
+                          opacity="0.62"
+                          transform="translate(0 360) scale(1 -1)"
+                        >
+
+                          <path
+                            d="M92 13
+                              C108 8, 123 8, 140 13
+                              C157 8, 172 8, 188 13"
+                            stroke-width="0.7"
+                          />
+
+                          <path
+                            d="M113 14
+                              C123 11, 131 11, 140 15
+                              C149 11, 157 11, 167 14"
+                            stroke-width="0.55"
+                          />
+
+                          <circle
+                            cx="140"
+                            cy="14"
+                            r="1.4"
+                            fill="#c8a66a"
+                            stroke="none"
+                          />
+
+                        </g>
+
+
+                        <!-- =========================
+                            SMALL SIDE ACCENTS
+                            ========================= -->
+
+                        <g
+                          stroke="#c8a66a"
+                          fill="#c8a66a"
+                          opacity="0.42"
+                        >
+                          <circle cx="10" cy="128" r="1"/>
+                          <circle cx="10" cy="180" r="0.8"/>
+                          <circle cx="10" cy="232" r="1"/>
+
+                          <circle cx="270" cy="128" r="1"/>
+                          <circle cx="270" cy="180" r="0.8"/>
+                          <circle cx="270" cy="232" r="1"/>
+                        </g>
+
+                      </g>
+
+
+                    <!-- Shimmer particle (animated) -->
+                    <circle class="mc-shimmer-dot" cx="140" cy="30" r="2" fill="#f0c97a" opacity="0"/>
+                    <circle class="mc-shimmer-dot-2" cx="40" cy="80" r="1.5" fill="#f0c97a" opacity="0"/>
+                    <circle class="mc-shimmer-dot-3" cx="240" cy="280" r="1.5" fill="#f0c97a" opacity="0"/>
+                  </svg>
+                  <img
+                    src="../images/corner-mc.svg"
+                    class="mc-corner-ornament mc-corner-ornament--tl"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <img
+                    src="../images/corner-mc.svg"
+                    class="mc-corner-ornament mc-corner-ornament--tr"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <img
+                    src="../images/corner-mc.svg"
+                    class="mc-corner-ornament mc-corner-ornament--bl"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <img
+                    src="../images/corner-mc.svg"
+                    class="mc-corner-ornament mc-corner-ornament--br"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </div>
+      
+                <!-- Flip container -->
+                <div class="mc-flip-wrap">
+                  <div class="mc-flip-inner">
+      
+                    <!-- DEPAN: Foto asli -->
+                    <div class="mc-flip-front">
+                      <img
+                        src="images/arjuna-formal-new.webp"
+                        alt="Foto Arjuna"
+                        class="mc-photo"
+                        loading="lazy"
+                      />
+                    </div>
+      
+                    <!-- BELAKANG: Versi anime sketch -->
+                    <div class="mc-flip-back">
+                      <img
+                        src="images/arjuna-formal-anime.webp"
+                        alt="Arjuna versi anime"
+                        class="mc-photo mc-photo-anime"
+                        loading="lazy"
+                        onerror="this.style.display='none'; this.closest('.mc-flip-back').classList.add('mc-no-anime')"
+                      />
+                      <div class="mc-anime-placeholder" aria-hidden="true">
+                        <svg viewBox="0 0 200 260" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                          <rect width="200" height="260" fill="#1a1a2e"/>
+                          <!-- Sketch silhouette placeholder -->
+                          <ellipse cx="100" cy="78" rx="38" ry="44" stroke="#b08346" stroke-width="1.5" fill="none" opacity="0.6"/>
+                          <path d="M62,118 Q60,160 58,200 Q80,210 100,212 Q120,210 142,200 Q140,160 138,118" stroke="#b08346" stroke-width="1.5" fill="none" opacity="0.6"/>
+                          <text x="100" y="240" text-anchor="middle" fill="#b08346" font-size="10" opacity="0.5" font-family="Cinzel, serif">anime sketch</text>
+                        </svg>
+                      </div>
+                    </div>
+      
+                  </div>
+                </div>
+      
+                <!-- Hint tap -->
+                <p class="mc-tap-hint" aria-hidden="true">✦ tekan untuk melihat ✦</p>
+      
+              </div>
+      
+              <!-- Info mempelai -->
+              <div class="mc-person-info text-center">
+                <h3 class="mc-name">Arjuna Ryan Shakti Wibisono, S.Kom.</h3>
+                <p class="mc-role">Mempelai Pria</p>
+                <p class="mc-family">
+                  Putra dari<br>
+                  Bapak H. Ir. Gunawan Wibisono, M.Si.<br>
+                  &amp; Ibu Hj. Ida Nur Sasanti, S.H.
+                </p>
+              </div>
+            </div>
+      
+            <!-- Separator bintang tengah -->
+            <div class="col-md-1 col-sm-12 mc-separator text-center">
+              <div class="mc-sep-inner">
+                <span class="mc-sep-star">✦</span>
+                <span class="mc-sep-line"></span>
+                <span class="mc-sep-star">✦</span>
+              </div>
+            </div>
+      
+            <!-- Mempelai Wanita -->
+            <div class="col-md-5 col-sm-6 mc-col animate-box">
+              <div class="mc-card" id="mc-card-bride">
+      
+                <!-- Frame Ghibli (SVG dekoratif) -->
+                <div class="mc-frame-ghibli" aria-hidden="true">
+                  <svg viewBox="0 0 280 360" xmlns="http://www.w3.org/2000/svg" class="mc-frame-svg">
+
+                    <g
+                      fill="none"
+                      stroke="#c8a66a"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+
+                      <!-- =========================
+                          OUTER FRAME
+                          ========================= -->
+
+                      <rect
+                        x="8"
+                        y="8"
+                        width="264"
+                        height="344"
+                        rx="5"
+                        ry="5"
+                        stroke-width="0.7"
+                        opacity="0.42"
+                      />
+
+                      <rect
+                        x="13"
+                        y="13"
+                        width="254"
+                        height="334"
+                        rx="4"
+                        ry="4"
+                        stroke-width="0.45"
+                        opacity="0.22"
+                      />
+
+
+                      <!-- =========================
+                          TOP LEFT BOTANICAL
+                          ========================= -->
+
+                      <g opacity="0.78">
+
+                        <!-- stem -->
+                        <path
+                          d="M14 45
+                            C18 34, 24 25, 37 17
+                            C45 12, 51 10, 58 10"
+                          stroke-width="0.9"
+                        />
+
+                        <!-- leaf 1 -->
+                        <path
+                          d="M25 29
+                            C20 22, 21 18, 29 18
+                            C31 23, 29 27, 25 29Z"
+                          stroke-width="0.7"
+                        />
+
+                        <!-- leaf 2 -->
+                        <path
+                          d="M33 22
+                            C32 14, 36 11, 43 14
+                            C42 19, 39 22, 33 22Z"
+                          stroke-width="0.7"
+                        />
+
+                        <!-- leaf 3 -->
+                        <path
+                          d="M42 16
+                            C44 9, 49 7, 55 11
+                            C52 15, 48 17, 42 16Z"
+                          stroke-width="0.7"
+                        />
+
+                        <!-- tiny flower -->
+                        <circle
+                          cx="18"
+                          cy="40"
+                          r="2"
+                          stroke-width="0.65"
+                        />
+
+                        <path d="M18 36 L18 44" stroke-width="0.5"/>
+                        <path d="M14 40 L22 40" stroke-width="0.5"/>
+
+                      </g>
+
+
+                      <!-- =========================
+                          TOP RIGHT BOTANICAL
+                          ========================= -->
+
+                      <g
+                        opacity="0.78"
+                        transform="translate(280 0) scale(-1 1)"
+                      >
+
+                        <path
+                          d="M14 45
+                            C18 34, 24 25, 37 17
+                            C45 12, 51 10, 58 10"
+                          stroke-width="0.9"
+                        />
+
+                        <path
+                          d="M25 29
+                            C20 22, 21 18, 29 18
+                            C31 23, 29 27, 25 29Z"
+                          stroke-width="0.7"
+                        />
+
+                        <path
+                          d="M33 22
+                            C32 14, 36 11, 43 14
+                            C42 19, 39 22, 33 22Z"
+                          stroke-width="0.7"
+                        />
+
+                        <path
+                          d="M42 16
+                            C44 9, 49 7, 55 11
+                            C52 15, 48 17, 42 16Z"
+                          stroke-width="0.7"
+                        />
+
+                        <circle
+                          cx="18"
+                          cy="40"
+                          r="2"
+                          stroke-width="0.65"
+                        />
+
+                        <path d="M18 36 L18 44" stroke-width="0.5"/>
+                        <path d="M14 40 L22 40" stroke-width="0.5"/>
+
+                      </g>
+
+
+                      <!-- =========================
+                          BOTTOM LEFT BOTANICAL
+                          ========================= -->
+
+                      <g
+                        opacity="0.65"
+                        transform="translate(0 360) scale(1 -1)"
+                      >
+
+                        <path
+                          d="M14 45
+                            C18 34, 24 25, 37 17
+                            C45 12, 51 10, 58 10"
+                          stroke-width="0.9"
+                        />
+
+                        <path
+                          d="M25 29
+                            C20 22, 21 18, 29 18
+                            C31 23, 29 27, 25 29Z"
+                          stroke-width="0.7"
+                        />
+
+                        <path
+                          d="M33 22
+                            C32 14, 36 11, 43 14
+                            C42 19, 39 22, 33 22Z"
+                          stroke-width="0.7"
+                        />
+
+                        <path
+                          d="M42 16
+                            C44 9, 49 7, 55 11
+                            C52 15, 48 17, 42 16Z"
+                          stroke-width="0.7"
+                        />
+
+                      </g>
+
+
+                      <!-- =========================
+                          BOTTOM RIGHT BOTANICAL
+                          ========================= -->
+
+                      <g
+                        opacity="0.65"
+                        transform="translate(280 360) scale(-1 -1)"
+                      >
+
+                        <path
+                          d="M14 45
+                            C18 34, 24 25, 37 17
+                            C45 12, 51 10, 58 10"
+                          stroke-width="0.9"
+                        />
+
+                        <path
+                          d="M25 29
+                            C20 22, 21 18, 29 18
+                            C31 23, 29 27, 25 29Z"
+                          stroke-width="0.7"
+                        />
+
+                        <path
+                          d="M33 22
+                            C32 14, 36 11, 43 14
+                            C42 19, 39 22, 33 22Z"
+                          stroke-width="0.7"
+                        />
+
+                        <path
+                          d="M42 16
+                            C44 9, 49 7, 55 11
+                            C52 15, 48 17, 42 16Z"
+                          stroke-width="0.7"
+                        />
+
+                      </g>
+
+
+                      <!-- =========================
+                          TOP CENTER ORNAMENT
+                          ========================= -->
+
+                      <g opacity="0.62">
+
+                        <path
+                          d="M92 13
+                            C108 8, 123 8, 140 13
+                            C157 8, 172 8, 188 13"
+                          stroke-width="0.7"
+                        />
+
+                        <path
+                          d="M113 14
+                            C123 11, 131 11, 140 15
+                            C149 11, 157 11, 167 14"
+                          stroke-width="0.55"
+                        />
+
+                        <circle
+                          cx="140"
+                          cy="14"
+                          r="1.4"
+                          fill="#c8a66a"
+                          stroke="none"
+                        />
+
+                      </g>
+
+
+                      <!-- =========================
+                          BOTTOM CENTER ORNAMENT
+                          ========================= -->
+
+                      <g
+                        opacity="0.62"
+                        transform="translate(0 360) scale(1 -1)"
+                      >
+
+                        <path
+                          d="M92 13
+                            C108 8, 123 8, 140 13
+                            C157 8, 172 8, 188 13"
+                          stroke-width="0.7"
+                        />
+
+                        <path
+                          d="M113 14
+                            C123 11, 131 11, 140 15
+                            C149 11, 157 11, 167 14"
+                          stroke-width="0.55"
+                        />
+
+                        <circle
+                          cx="140"
+                          cy="14"
+                          r="1.4"
+                          fill="#c8a66a"
+                          stroke="none"
+                        />
+
+                      </g>
+
+
+                      <!-- =========================
+                          SMALL SIDE ACCENTS
+                          ========================= -->
+
+                      <g
+                        stroke="#c8a66a"
+                        fill="#c8a66a"
+                        opacity="0.42"
+                      >
+                        <circle cx="10" cy="128" r="1"/>
+                        <circle cx="10" cy="180" r="0.8"/>
+                        <circle cx="10" cy="232" r="1"/>
+
+                        <circle cx="270" cy="128" r="1"/>
+                        <circle cx="270" cy="180" r="0.8"/>
+                        <circle cx="270" cy="232" r="1"/>
+                      </g>
+
+                    </g>
+
+
+                    <circle class="mc-shimmer-dot" cx="140" cy="330" r="2" fill="#f0c97a" opacity="0"/>
+                    <circle class="mc-shimmer-dot-2" cx="240" cy="80" r="1.5" fill="#f0c97a" opacity="0"/>
+                    <circle class="mc-shimmer-dot-3" cx="40" cy="280" r="1.5" fill="#f0c97a" opacity="0"/>
+                  </svg>
+                  <img
+                    src="../images/corner-mc.svg"
+                    class="mc-corner-ornament mc-corner-ornament--tl"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <img
+                    src="../images/corner-mc.svg"
+                    class="mc-corner-ornament mc-corner-ornament--tr"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <img
+                    src="../images/corner-mc.svg"
+                    class="mc-corner-ornament mc-corner-ornament--bl"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <img
+                    src="../images/corner-mc.svg"
+                    class="mc-corner-ornament mc-corner-ornament--br"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </div>
+      
+                <!-- Flip container -->
+                <div class="mc-flip-wrap">
+                  <div class="mc-flip-inner">
+      
+                    <!-- DEPAN: Foto asli -->
+                    <div class="mc-flip-front">
+                      <img
+                        src="images/anisa-formal-new.webp"
+                        alt="Foto Anisa"
+                        class="mc-photo"
+                        loading="lazy"
+                      />
+                    </div>
+      
+                    <!-- BELAKANG: Versi anime sketch -->
+                    <div class="mc-flip-back">
+                      <img
+                        src="images/anisa-formal-anime.webp"
+                        alt="Anisa versi anime"
+                        class="mc-photo mc-photo-anime"
+                        loading="lazy"
+                        onerror="this.style.display='none'; this.closest('.mc-flip-back').classList.add('mc-no-anime')"
+                      />
+                      <div class="mc-anime-placeholder" aria-hidden="true">
+                        <svg viewBox="0 0 200 260" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                          <rect width="200" height="260" fill="#1a1a2e"/>
+                          <ellipse cx="100" cy="78" rx="38" ry="44" stroke="#b08346" stroke-width="1.5" fill="none" opacity="0.6"/>
+                          <path d="M62,118 Q60,160 58,200 Q80,210 100,212 Q120,210 142,200 Q140,160 138,118" stroke="#b08346" stroke-width="1.5" fill="none" opacity="0.6"/>
+                          <!-- Hijab hint -->
+                          <path d="M62,78 Q60,40 100,34 Q140,40 138,78" stroke="#b08346" stroke-width="1.5" fill="none" opacity="0.6"/>
+                          <text x="100" y="240" text-anchor="middle" fill="#b08346" font-size="10" opacity="0.5" font-family="Cinzel, serif">anime sketch</text>
+                        </svg>
+                      </div>
+                    </div>
+      
+                  </div>
+                </div>
+      
+                <!-- Hint tap -->
+                <p class="mc-tap-hint" aria-hidden="true">✦ tekan untuk melihat ✦</p>
+      
+              </div>
+      
+              <!-- Info mempelai -->
+              <div class="mc-person-info text-center">
+                <h3 class="mc-name">Anisa Dwi Yunianti, S.Hum., M.Hum.</h3>
+                <p class="mc-role">Mempelai Wanita</p>
+                <p class="mc-family">
+                  Putri dari<br>
+                  Bapak Tri Supriyadi, S.Sos.<br>
+                  &amp; Ibu Kusmiati
+                </p>
+              </div>
+            </div>
+      
+          </div><!-- end mc-cards-row -->
+      
+          <!-- Penutup -->
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1 text-center mc-closing animate-box">
+              <div class="mc-closing-divider" aria-hidden="true"><span>✦</span></div>
+              <p class="mc-closing-text"><span>Dan semesta pun</span><span>merestui perjalanan ini.</span></p>
+            </div>
+          </div>
+      
+        </div>
+      </section>
+
+      <div id="fh5co-couple" class="invitation-section chapter-two">
+        <!-- Background parchment -->
+        <div class="chapter-two__bg" aria-hidden="true"></div>
+
+        <!-- Ornamen sudut yang sama dengan halaman Closing -->
+        <img
+          src="images/end-ornamen.png"
+          alt=""
+          class="chapter-two__ornament chapter-two__ornament--left"
+          aria-hidden="true"
+          decoding="async"
+        />
+        <img
+          src="images/end-ornamen.png"
+          alt=""
+          class="chapter-two__ornament chapter-two__ornament--right"
+          aria-hidden="true"
+          decoding="async"
+        />
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1 text-center">
+              <div class="chapter-two__content">
+                <span class="hero-kicker chapter-two__kicker">
+                  Chapter Two
+                </span>
+
+                <div class="chapter-two__divider" aria-hidden="true">
+                  <span>✦</span>
+                </div>
+
+                <h2 class="chapter-two__title">
+                  The Day We Begin
+                </h2>
+
+                <p class="chapter-two__copy">
+                  Setelah takdir mempertemukan,<br/>
+                  sebuah pilihan tumbuh menjadi satu janji.
+                </p>
+
+                <!-- =====================================
+                    ACARA — COUNTDOWN
+                    #fh5co-event-detail = target nav Acara
+                    ===================================== -->
+                <div id="fh5co-event-detail" class="simply-countdown simply-countdown-one chapter-two__countdown"></div>
+
+                <div class="chapter-two__panel">
+
+                <!-- =======================================
+                    TANGGAL
+                    ======================================= -->
+                <div class="chapter-two__date">
+                  Sabtu · 17 · Oktober · 2026
+                </div>
+
+
+                <!-- =======================================
+                    RANGKAIAN ACARA
+                    ======================================= -->
+                <div class="row chapter-two__schedule">
+
+                  <div class="col-md-12">
+
+                    <div class="chapter-two__events">
+
+
+                      <!-- =================================
+                          AKAD NIKAH
+                          ================================= -->
+                      <article class="chapter-two__item">
+
+                        <h3>
+                          Akad Nikah
+                        </h3>
+
+
+                        <div class="chapter-two__detail">
+
+                          <div class="chapter-two__detail-heading">
+                            <i class="icon-clock2" aria-hidden="true"></i>
+                            <strong>07.30 WIB – Selesai</strong>
+                          </div>
+
+                        </div>
+
+
+                        <div class="chapter-two__detail">
+
+                          <div class="chapter-two__detail-heading">
+                            <i class="icon-location2" aria-hidden="true"></i>
+                            <strong>Gedung Serbaguna 2 (SG2), Asrama Haji Pondok Gede</strong>
+                          </div>
+                          <span>
+                            Jl. Raya Pondok Gede Kel. Pinang Ranti, Kec. Makasar, Jakarta Timur
+                          </span>
+
+                        </div>
+
+                      </article>
+
+
+                      <!-- =================================
+                          PEMISAH
+                          ================================= -->
+                      <div
+                        class="chapter-two__between"
+                        aria-hidden="true"
+                      >
+                        <span></span>
+                        <b>✦</b>
+                        <span></span>
+                      </div>
+
+
+                      <!-- =================================
+                          RESEPSI
+                          ================================= -->
+                      <article class="chapter-two__item">
+
+                        <h3>
+                          Resepsi
+                        </h3>
+
+
+                        <div class="chapter-two__detail">
+
+                          <div class="chapter-two__detail-heading">
+                            <i class="icon-clock2" aria-hidden="true"></i>
+                            <strong>11.00 – 13.00 WIB</strong>
+                          </div>
+                        </div>
+
+
+                        <div class="chapter-two__detail">
+
+                          <div class="chapter-two__detail-heading">
+                            <i class="icon-location2" aria-hidden="true"></i>
+                            <strong>Gedung Serbaguna 2 (SG2), Asrama Haji Pondok Gede</strong>
+                          </div>
+
+                          <span>
+                            Jl. Raya Pondok Gede Kel. Pinang Ranti, Kec. Makasar, Jakarta Timur
+                          </span>
+
+                        </div>
+
+                      </article>
+
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+
+                <!-- =======================================
+                    GOOGLE MAPS
+                    ======================================= -->
+                <div class="row">
+
+                  <div class="col-md-10 col-md-offset-1 text-center">
+
+                    <div class="chapter-two__map">
+
+                      <a
+                        href="https://maps.app.goo.gl/U4rpbceXFpA62mde7"
+                        class="chapter-two__map-button"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i class="icon-location"></i>
+                        <span class="chapter-two__map-button-label"><span>Buka Navigasi</span><span>Google Maps</span></span>
+                      </a>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+
+              </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Landscape bawah -->
+        <picture>
+          <source srcset="images/promise_bottom.webp" type="image/webp" />
+          <img
+            src="images/promise_bottom.png"
+            alt=""
+            class="chapter-two__landscape"
+            aria-hidden="true"
+          >
+        </picture>
+      </div>
+
+      <!-- =========================================================
+           WEDDING DU'A — For the Journey Ahead
+           Lanjutan lanskap akhir Chapter Two.
+           Scene: langit pagi cerah (bright morning sky).
+           Lapisan latar: doa-base.webp + doa-cloud.webp.
+           Gerak awan menggunakan animasi CSS; tidak memakai video.
+           ========================================================= -->
+      <section id="fh5co-doa" class="invitation-section doa-section">
+        <!-- Lapisan dasar langit pagi dan awan transparan yang bergerak -->
+        <div class="doa-section__bg" aria-hidden="true"></div>
+        <div class="doa-section__cloud" aria-hidden="true">
+          <div class="doa-section__cloud-drift"></div>
+        </div>
+        <img class="doa-section__leaf doa-section__leaf--one" src="images/rsvp-leaf.png" alt="" aria-hidden="true" decoding="async" />
+        <img class="doa-section__leaf doa-section__leaf--two" src="images/rsvp-leaf.png" alt="" aria-hidden="true" decoding="async" />
+        <img class="doa-section__leaf doa-section__leaf--three" src="images/rsvp-leaf.png" alt="" aria-hidden="true" decoding="async" />
+        <img class="doa-section__leaf doa-section__leaf--four" src="images/rsvp-leaf.png" alt="" aria-hidden="true" decoding="async" />
+        <img class="doa-section__leaf doa-section__leaf--five" src="images/rsvp-leaf.png" alt="" aria-hidden="true" decoding="async" />
+        <img class="doa-section__leaf doa-section__leaf--six" src="images/rsvp-leaf.png" alt="" aria-hidden="true" decoding="async" />
+
+        <!-- Transisi cream → pale blue dari Chapter Two (atas section) -->
+        <div class="doa-section__glow" aria-hidden="true"></div>
+
+        <!-- Garis penyambung di atas & bawah kartu — pola yang sama dengan
+             Prologue (.prologue-connector di atas + .invitation-verse::after
+             di bawah): benang vertikal 3px yang memudar di kedua ujungnya. -->
+        <span class="doa-section__connector doa-section__connector--top" aria-hidden="true"></span>
+        <span class="doa-section__connector doa-section__connector--bottom" aria-hidden="true"></span>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1 text-center">
+              <div class="doa-section__content">
+                <div class="invitation-card invitation-verse-card doa-section__card">
+
+                  <!-- Ornamen sudut memakai kelas bersama .prologue-corner -->
+                  <span class="prologue-corner prologue-corner--top-left" aria-hidden="true"></span>
+                  <span class="prologue-corner prologue-corner--top-right" aria-hidden="true"></span>
+                  <span class="prologue-corner prologue-corner--bottom-left" aria-hidden="true"></span>
+                  <span class="prologue-corner prologue-corner--bottom-right" aria-hidden="true"></span>
+
+                  <span class="hero-kicker doa-section__kicker">For the Journey Ahead</span>
+                  <p class="hero-subtitle verse-subtitle doa-section__title">Wedding Du'a</p>
+
+                  <p class="verse-arabic doa-section__arabic" lang="ar" dir="rtl">
+                    بَارَكَ اللَّهُ لَكَ وَبَارَكَ عَلَيْكَ وَجَمَعَ بَيْنَكُمَا فِى خَيْرٍ
+                  </p>
+
+                  <p class="doa-section__transliteration">
+                    Barakallahu laka wa baraka 'alaika wa jama'a bainakuma fii khoir
+                  </p>
+
+                  <div class="doa-section__divider" aria-hidden="true"><span>✦</span></div>
+
+                  <p class="verse-translation doa-section__translation">
+                    &ldquo;Semoga Allah memberkahimu ketika bahagia dan ketika susah dan mengumpulkan kalian berdua dalam kebaikan.&rdquo;
+                  </p>
+
+                  <p class="doa-section__source">
+                    (HR. Abu Daud, no. 2130; Tirmidzi, no. 1091. Al-Hafizh Abu Thahir mengatakan bahwa sanad hadits ini shahih)
+                  </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+           A LITTLE MORE US
+           Personal memories & wedding portraits
+
+           Section ini sengaja memakai "kertas" & ornamen yang SAMA
+           dengan Chapter Two (promise_bg + promise_ornamen_left/right)
+           supaya terbaca sebagai satu lembar parchment/storybook yang
+           sama dengan Chapter Two — hanya bagian yang lebih personal,
+           playful, dan scrapbook. Setelah kalimat penutup, section ini
+           menyerahkan halaman ke RSVP (#fh5co-started) tanpa blok
+           warna lain.
+           ========================================================= -->
+      <section
+        id="fh5co-more-us"
+        class="invitation-section more-us-section"
+      >
+
+        <!-- =====================================================
+             PARCHMENT — kertas yang sama dengan Chapter Two
+             ===================================================== -->
+
+        <!-- Latar parchment. Aset, crop, dan treatment IDENTIK dengan
+             .chapter-two__bg (promise_bg.webp + fallback .png). -->
+        <div class="more-us-parchment" aria-hidden="true"></div>
+
+        <!-- Ornamen sudut Closing, dengan ukuran dan animasi Chapter Two -->
+        <img
+          src="images/end-ornamen.png"
+          alt=""
+          class="chapter-two__ornament chapter-two__ornament--left more-us-ornament"
+          aria-hidden="true"
+          decoding="async"
+        />
+        <img
+          src="images/end-ornamen.png"
+          alt=""
+          class="chapter-two__ornament chapter-two__ornament--right more-us-ornament"
+          aria-hidden="true"
+          decoding="async"
+        />
+        <img
+          src="images/end-ornamen.png"
+          alt=""
+          class="chapter-two__ornament chapter-two__ornament--left more-us-ornament more-us-ornament--bottom-left"
+          aria-hidden="true"
+          decoding="async"
+        />
+        <img
+          src="images/end-ornamen.png"
+          alt=""
+          class="chapter-two__ornament chapter-two__ornament--right more-us-ornament more-us-ornament--bottom-right"
+          aria-hidden="true"
+          decoding="async"
+        />
+
+        <!-- =====================================================
+             INTRO
+             ===================================================== -->
+        <div class="more-us-intro">
+
+          <div class="more-us-intro__text">
+
+            <span class="hero-kicker more-us-kicker">
+              A Little More Us
+            </span>
+
+            <h2>
+              Some Moments,<br>
+              Some Memories,<br>
+              <em>Just Us.</em>
+            </h2>
+
+            <div class="more-us-divider" aria-hidden="true">
+              <span>✦</span>
+            </div>
+
+            <p>
+              Sedikit potret dari kami, di antara tawa dan <br/>momen-momen sederhana.
+            </p>
+
+          </div>
+
+
+          <!-- Foto utama + kartu kertas di belakangnya -->
+          <div class="more-us-intro__visual">
+
+            <!-- Kartu kertas (dulu kartu navy) di belakang foto utama:
+                 sekarang memakai kertas parchment + garis emas tipis agar
+                 tetap terbaca sebagai lembar yang sama dengan Chapter Two. -->
+            <div class="more-us-photo-back" aria-hidden="true"></div>
+
+            <picture>
+              <source srcset="images/us_opening.webp" type="image/webp" />
+              <img
+                src="images/us_opening.png"
+                alt="Arjuna dan Anisa"
+                class="more-us-intro__photo"
+                width="1024"
+                height="1536"
+                loading="lazy"
+                decoding="async"
+              >
+            </picture>
+
+          </div>
+
+        </div>
+
+
+        <!-- =====================================================
+             MEMORY COLLAGE
+
+             Pemetaan slot (kelas) -> file foto. Nama file sengaja
+             TIDAK lagi sama dengan nomor slot karena foto lama
+             digeser dan ada dua foto baru:
+               --1 -> us_collage1   (tetap)
+               --2 -> us_collage2   (tetap)
+               --3 -> us_collage7   (foto baru, pengganti collage3)
+               --4 -> us_collage3   (dulu di slot 3)
+               --5 -> us_collage4   (dulu di slot 4)
+               --6 -> us_collage8   (foto baru, pengganti collage6)
+             us_collage5 & us_collage6 sudah tidak dipakai dan filenya
+             dihapus. Setiap foto disajikan sebagai .webp (untuk browser
+             modern) dengan .png sebagai fallback.
+             ===================================================== -->
+        <div class="memory-collage">
+
+          <!-- Finishing scrapbook: sparkle & divider CSS (bukan aset/emoji). -->
+          <span class="memory-sparkle memory-sparkle--1" aria-hidden="true"></span>
+          <span class="memory-sparkle memory-sparkle--2" aria-hidden="true"></span>
+          <span class="memory-sparkle memory-sparkle--3" aria-hidden="true"></span>
+          <span class="memory-sparkle memory-sparkle--4" aria-hidden="true"></span>
+          <span class="memory-sparkle memory-sparkle--5" aria-hidden="true"></span>
+          <span class="memory-collage__divider memory-collage__divider--one" aria-hidden="true"><span></span></span>
+          <span class="memory-collage__divider memory-collage__divider--two" aria-hidden="true"><span></span></span>
+
+          <div class="memory-photo memory-photo--1">
+            <picture>
+              <source srcset="images/us_collage1.webp" type="image/webp" />
+              <img
+                src="images/us_collage1.png"
+                alt="Arjuna"
+                width="1023"
+                height="1538"
+                loading="lazy"
+                decoding="async"
+              >
+            </picture>
+          </div>
+
+          <div class="memory-photo memory-photo--2">
+            <picture>
+              <source srcset="images/us_collage2.webp" type="image/webp" />
+              <img
+                src="images/us_collage2.png"
+                alt="Anisa"
+                width="1024"
+                height="1536"
+                loading="lazy"
+                decoding="async"
+              >
+            </picture>
+          </div>
+
+          <div class="memory-photo memory-photo--3">
+            <picture>
+              <source srcset="images/us_collage7.webp" type="image/webp" />
+              <img
+                src="images/us_collage7.png"
+                alt="Arjuna dan Anisa"
+                width="1024"
+                height="1536"
+                loading="lazy"
+                decoding="async"
+              >
+            </picture>
+          </div>
+
+          <div class="memory-photo memory-photo--4">
+            <picture>
+              <source srcset="images/us_collage3.webp" type="image/webp" />
+              <img
+                src="images/us_collage3.png"
+                alt="Arjuna dan Anisa"
+                width="1024"
+                height="1536"
+                loading="lazy"
+                decoding="async"
+              >
+            </picture>
+          </div>
+
+          <div class="memory-photo memory-photo--5">
+            <picture>
+              <source srcset="images/us_collage4.webp" type="image/webp" />
+              <img
+                src="images/us_collage4.png"
+                alt="Arjuna dan Anisa"
+                width="1024"
+                height="1536"
+                loading="lazy"
+                decoding="async"
+              >
+            </picture>
+          </div>
+
+          <div class="memory-photo memory-photo--6">
+            <picture>
+              <source srcset="images/us_collage8.webp" type="image/webp" />
+              <img
+                src="images/us_collage8.png"
+                alt="Arjuna dan Anisa"
+                width="1024"
+                height="1536"
+                loading="lazy"
+                decoding="async"
+              >
+            </picture>
+          </div>
+
+          <div class="memory-photo memory-photo--7">
+            <picture>
+              <source srcset="images/10.webp" type="image/webp" />
+              <img src="images/10.png" alt="Arjuna dan Anisa" width="1024" height="1536" loading="lazy" decoding="async">
+            </picture>
+          </div>
+
+          <div class="memory-photo memory-photo--8">
+            <picture>
+              <source srcset="images/11.webp" type="image/webp" />
+              <img src="images/11.png" alt="Arjuna dan Anisa" width="1024" height="1536" loading="lazy" decoding="async">
+            </picture>
+          </div>
+
+          <div class="memory-photo memory-photo--9">
+            <picture>
+              <source srcset="images/12.webp" type="image/webp" />
+              <img src="images/12.png" alt="Arjuna dan Anisa" width="1024" height="1536" loading="lazy" decoding="async">
+            </picture>
+          </div>
+
+          </div>
+
+
+        <!-- =====================================================
+             CLOSING — kalimat terakhir di lembar parchment ini.
+
+             Struktur (sesuai arahan revisi):
+                 ✦   (.more-us-divider — komponen yang sama dengan
+                      divider section lain, jadi garis & bintangnya
+                      konsisten; tetap gold/muted gold)
+                 kalimat penutup
+             Sulur botanikal (intro, kiri & kanan closing) dan
+             fleuron ❧ SUDAH DIHAPUS sesuai arahan revisi — satu-satunya
+             dekorasi section ini adalah ornamen Chapter Two
+             (promise_ornamen_left/right).
+             Setelah blok ini TIDAK ada blok warna lagi: tepi bawah
+             section (.more-us-section::after) meleburkan parchment ke
+             RSVP (#fh5co-started).
+
+             Catatan: elemen "Little moments, that became ours."
+             (.memory-note) dan blok navy ".memory-transition"
+             ("And then, among all the little moments..." + "See You
+             There.") sudah DIHAPUS dari section ini beserta CSS-nya.
+             ===================================================== -->
+        <div class="more-us-closing">
+
+          <div class="more-us-divider more-us-closing__divider" aria-hidden="true">
+            <span>✦</span>
+          </div>
+
+          <p class="more-us-closing__text">
+            Kami, dalam segala<br>
+            hal kecil yang berarti.
+          </p>
+          <span class="more-us-closing__ornament" aria-hidden="true"><span></span></span>
+
+        </div>
+
+
+      </section>
+
+      <div id="fh5co-couple-story" class="invitation-section invitation-story" hidden>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+              <span>Perjalanan Kami</span>
+              <h2>Cerita Singkat</h2>
+              <p>
+                Bagian ini bisa Anda ganti dengan kisah asli kalian, mulai dari
+                pertama bertemu sampai akhirnya memutuskan menuju pernikahan.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 col-md-offset-0">
+              <ul class="timeline animate-box">
+                <li class="animate-box">
+                  <div
+                    class="timeline-badge"
+                    style="background-image: url(images/couple-1.jpg)"
+                  ></div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h3 class="timeline-title">Awal Pertemuan</h3>
+                      <span class="date">Tahun 2022</span>
+                    </div>
+                    <div class="timeline-body">
+                      <p>
+                        Ceritakan momen pertama kali saling mengenal. Bisa singkat,
+                        jujur, dan personal agar undangan terasa lebih hidup.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="timeline-inverted animate-box">
+                  <div
+                    class="timeline-badge"
+                    style="background-image: url(images/couple-2.jpg)"
+                  ></div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h3 class="timeline-title">Komitmen</h3>
+                      <span class="date">Tahun 2024</span>
+                    </div>
+                    <div class="timeline-body">
+                      <p>
+                        Isi dengan fase ketika hubungan semakin serius, saling
+                        mengenal keluarga, dan mulai merencanakan masa depan bersama.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="animate-box">
+                  <div
+                    class="timeline-badge"
+                    style="background-image: url(images/couple-3.jpg)"
+                  ></div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h3 class="timeline-title">Menuju Hari Bahagia</h3>
+                      <span class="date">2026</span>
+                    </div>
+                    <div class="timeline-body">
+                      <p>
+                        Setelah perjalanan yang penuh syukur, kami memantapkan hati
+                        untuk melangkah ke jenjang pernikahan dan memulai ibadah
+                        terpanjang bersama.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="fh5co-gallery" class="fh5co-section-gray invitation-gallery" hidden>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+              <span>Our Moments</span>
+              <h2>Galeri</h2>
+              <p>
+                Anda bisa mengganti foto-foto di bawah dengan prewedding atau momen
+                terbaik kalian sendiri.
+              </p>
+            </div>
+          </div>
+          <div class="row row-bottom-padded-md">
+            <div class="col-md-12">
+              <ul id="fh5co-gallery-list">
+                <li
+                  class="one-third animate-box"
+                  data-animate-effect="fadeIn"
+                  style="background-image: url(images/gallery-1.jpg)"
+                >
+                  <a href="images/gallery-1.jpg">
+                    <div class="case-studies-summary">
+                      <span>Arjuna &amp; Anisa</span>
+                      <h2>Senyum Pertama</h2>
+                    </div>
+                  </a>
+                </li>
+                <li
+                  class="one-third animate-box"
+                  data-animate-effect="fadeIn"
+                  style="background-image: url(images/gallery-2.jpg)"
+                >
+                  <a href="images/gallery-2.jpg" class="color-2">
+                    <div class="case-studies-summary">
+                      <span>Memories</span>
+                      <h2>Langkah Bersama</h2>
+                    </div>
+                  </a>
+                </li>
+                <li
+                  class="one-third animate-box"
+                  data-animate-effect="fadeIn"
+                  style="background-image: url(images/gallery-3.jpg)"
+                >
+                  <a href="images/gallery-3.jpg" class="color-3">
+                    <div class="case-studies-summary">
+                      <span>Moments</span>
+                      <h2>Menanti Hari Indah</h2>
+                    </div>
+                  </a>
+                </li>
+                <li
+                  class="one-third animate-box"
+                  data-animate-effect="fadeIn"
+                  style="background-image: url(images/gallery-4.jpg)"
+                >
+                  <a href="images/gallery-4.jpg" class="color-4">
+                    <div class="case-studies-summary">
+                      <span>Forever</span>
+                      <h2>Bahagia Sederhana</h2>
+                    </div>
+                  </a>
+                </li>
+                <li
+                  class="one-third animate-box"
+                  data-animate-effect="fadeIn"
+                  style="background-image: url(images/gallery-5.jpg)"
+                >
+                  <a href="images/gallery-5.jpg" class="color-3">
+                    <div class="case-studies-summary">
+                      <span>Love</span>
+                      <h2>Doa yang Sama</h2>
+                    </div>
+                  </a>
+                </li>
+                <li
+                  class="one-third animate-box"
+                  data-animate-effect="fadeIn"
+                  style="background-image: url(images/gallery-6.jpg)"
+                >
+                  <a href="images/gallery-6.jpg" class="color-4">
+                    <div class="case-studies-summary">
+                      <span>Together</span>
+                      <h2>Menuju Pelaminan</h2>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="fh5co-counter"
+        class="fh5co-bg fh5co-counter invitation-counter"
+        style="background-image: url(images/img_bg_5.jpg)"
+        hidden
+      >
+        <div class="overlay invitation-overlay"></div>
+        <div class="container">
+          <div class="row">
+            <div class="display-t">
+              <div class="display-tc">
+                <div class="col-md-3 col-sm-6 animate-box">
+                  <div class="feature-center">
+                    <span class="icon">
+                      <i class="icon-heart-outlined"></i>
+                    </span>
+                    <span class="counter js-counter" data-from="0" data-to="1" data-speed="1200" data-refresh-interval="50">1</span>
+                    <span class="counter-label">Janji Suci</span>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6 animate-box">
+                  <div class="feature-center">
+                    <span class="icon">
+                      <i class="icon-calendar"></i>
+                    </span>
+                    <span class="counter js-counter" data-from="0" data-to="1" data-speed="1400" data-refresh-interval="50">1</span>
+                    <span class="counter-label">Hari Bahagia</span>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6 animate-box">
+                  <div class="feature-center">
+                    <span class="icon">
+                      <i class="icon-users"></i>
+                    </span>
+                    <span class="counter js-counter" data-from="0" data-to="2" data-speed="1800" data-refresh-interval="50">2</span>
+                    <span class="counter-label">Dua Hati</span>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6 animate-box">
+                  <div class="feature-center">
+                    <span class="icon">
+                      <i class="icon-star"></i>
+                    </span>
+                    <span class="counter js-counter" data-from="0" data-to="100" data-speed="2200" data-refresh-interval="50">100</span>
+                    <span class="counter-label">Harapan Baik</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- =========================================================
+           ATMOSFER BERSAMA — RSVP + Ucapan & Doa + Gift
+           Ketiga section di bawah ini duduk di atas SATU scene latar
+           (`.rsvp-scene`), bukan dua latar terpisah. Lapisan scene global
+           dari belakang ke depan:
+             1. rsvp-base       langit Ghibli (dasar)
+             2. rsvp-cloud      awan transparan di atas langit
+             3. veil            kabut ivory supaya heading tetap terbaca
+             4. rsvp-gift      landscape transparan untuk area Gift
+           Lapisan scene global berada di `.rsvp-scene__layers` (z-index 0);
+           ornamen dahan berada di transisi RSVP dan daftar ucapan.
+           Closing berada sesudah scene ini dengan parchment tersendiri.
+           ID section (#fh5co-started / #fh5co-testimonial) TIDAK berubah sehingga
+           navigasi bawah & anchor tetap bekerja.
+           ========================================================= -->
+      <div class="rsvp-scene">
+        <div class="rsvp-scene__layers" aria-hidden="true">
+          <!-- Jembatan parchment → langit di ATAS scene: warna pertamanya
+               persis sama dengan baris terakhir A Little More Us
+               (rgb(195, 177, 156)), lalu memudar ke langit — pola yang
+               sama dengan .doa-section__glow di Chapter Two → Wedding
+               Du'a. Zengga ini yang membuat peralihan tidak terbaca
+               sebagai garis potong. -->
+          <span class="rsvp-scene__bridge"></span>
+          <span class="rsvp-scene__base" data-scene-depth="0.035" data-scene-max="70"></span>
+          <span class="rsvp-scene__cloud" data-scene-depth="0.065" data-scene-max="110">
+            <span class="rsvp-scene__cloud-drift"></span>
+          </span>
+          <span class="rsvp-scene__veil"></span>
+          <picture class="rsvp-scene__gift-landscape">
+            <source srcset="images/rsvp-gift.webp" type="image/webp" />
+            <img src="images/rsvp-gift.png" alt="" aria-hidden="true" decoding="async" />
+          </picture>
+          <img class="rsvp-scene__leaf rsvp-scene__leaf--left-upper" src="images/rsvp-leaf.png" alt="" aria-hidden="true" decoding="async" />
+          <img class="rsvp-scene__leaf rsvp-scene__leaf--left-middle" src="images/rsvp-leaf.png" alt="" aria-hidden="true" decoding="async" />
+          <img class="rsvp-scene__leaf rsvp-scene__leaf--left-lower" src="images/rsvp-leaf.png" alt="" aria-hidden="true" decoding="async" />
+          <img class="rsvp-scene__leaf rsvp-scene__leaf--left-bottom" src="images/rsvp-leaf.png" alt="" aria-hidden="true" decoding="async" />
+          <img class="rsvp-scene__leaf rsvp-scene__leaf--right-upper" src="images/rsvp-leaf.png" alt="" aria-hidden="true" decoding="async" />
+          <img class="rsvp-scene__leaf rsvp-scene__leaf--right-middle" src="images/rsvp-leaf.png" alt="" aria-hidden="true" decoding="async" />
+          <img class="rsvp-scene__leaf rsvp-scene__leaf--right-lower" src="images/rsvp-leaf.png" alt="" aria-hidden="true" decoding="async" />
+          <img class="rsvp-scene__leaf rsvp-scene__leaf--right-bottom" src="images/rsvp-leaf.png" alt="" aria-hidden="true" decoding="async" />
+        </div>
+
+      <!-- RSVP — kartu parchment di atas scene bersama (.rsvp-scene).
+           Kartu, ornamen sudut, dan tipografinya tetap mengikuti
+           design system yang sama (.invitation-verse-card + .prologue-corner). -->
+      <div id="fh5co-started" class="invitation-rsvp">
+        <span class="rsvp-scene__branch rsvp-scene__branch--left" data-scene-depth="0.1" data-scene-max="86" aria-hidden="true"></span>
+        <span class="rsvp-scene__branch rsvp-scene__branch--right" data-scene-depth="0.1" data-scene-max="86" aria-hidden="true"></span>
+        <div class="container">
+          <div class="row animate-box">
+            <div class="col-md-8 col-md-offset-2 text-center rsvp-heading">
+              <span class="hero-kicker rsvp-kicker">RSVP</span>
+              <h2 class="rsvp-title">See You There</h2>
+              <p class="rsvp-intro">
+                Kami akan sangat bahagia menyambut kehadiran Anda di hari istimewa kami.
+              </p>
+            </div>
+          </div>
+          <div class="row animate-box">
+            <div class="col-md-8 col-md-offset-2">
+              <div class="invitation-card invitation-verse-card rsvp-card">
+                <span class="prologue-corner prologue-corner--top-left" aria-hidden="true"></span>
+                <span class="prologue-corner prologue-corner--top-right" aria-hidden="true"></span>
+                <span class="prologue-corner prologue-corner--bottom-left" aria-hidden="true"></span>
+                <span class="prologue-corner prologue-corner--bottom-right" aria-hidden="true"></span>
+
+                <form id="rsvpForm" class="rsvp-form">
+                  <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                      <div class="form-group">
+                        <label for="rsvp_name">Nama</label>
+                        <input type="text" class="form-control" id="rsvp_name" name="guest_name" placeholder="Nama lengkap" required />
+                        <small id="rsvpNameHint" class="field-hint">Nama akan terisi otomatis jika tamu dikenali dari undangan.</small>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                      <div class="form-group">
+                        <label for="attendance_status">Konfirmasi</label>
+                        <select class="form-control" id="attendance_status" name="attendance_status" required>
+                          <option value="">Pilih kehadiran</option>
+                          <option value="Hadir">Hadir</option>
+                          <option value="Tidak Hadir">Maaf belum bisa hadir</option>
+                          <option value="Masih Tentatif">Masih tentatif</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="wish_message">Ucapan &amp; doa</label>
+                    <textarea class="form-control textarea-control" id="wish_message" name="wish_message" rows="4" placeholder="Tulis ucapan atau doa terbaik Anda"></textarea>
+                  </div>
+                  <input type="hidden" id="guest_code" name="guest_code" value="" />
+                  <div class="text-center rsvp-actions">
+                    <button type="submit" id="submitRsvpButton" class="btn btn-default">Kirim RSVP</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ucapan & Doa — satu konsep (bukan lagi "Doa Restu" + "Ucapan
+           Tamu"). Ucapan dari Google Sheet ditampilkan 5 terbaru; tombol
+           "Lihat Semua Ucapan" membuka seluruh daftar di dalam scroll area
+           internal supaya section tidak memanjang. -->
+      <div id="fh5co-testimonial" class="invitation-wishes">
+        <span class="rsvp-wishes-connector" aria-hidden="true"><span>✦</span></span>
+        <img class="rsvp-scene__leaf rsvp-scene__leaf--center-upper" src="images/rsvp-leaf.png" alt="" aria-hidden="true" decoding="async" />
+        <img class="rsvp-scene__leaf rsvp-scene__leaf--center-lower" src="images/rsvp-leaf.png" alt="" aria-hidden="true" decoding="async" />
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <div class="wishes-shell invitation-verse-card">
+                <span class="prologue-corner prologue-corner--top-left" aria-hidden="true"></span>
+                <span class="prologue-corner prologue-corner--top-right" aria-hidden="true"></span>
+                <span class="prologue-corner prologue-corner--bottom-left" aria-hidden="true"></span>
+                <span class="prologue-corner prologue-corner--bottom-right" aria-hidden="true"></span>
+
+                <div class="wishes-list" id="wishesList">
+                  <div class="wish-item wish-item--empty">
+                    <div class="wish-item__body">
+                      <p class="wish-message">Ucapan tamu akan muncul di sini setelah RSVP dikirim.</p>
+                      <span class="wish-name">Menunggu ucapan pertama</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center wishes-actions">
+                <button type="button" id="toggleWishes" class="btn btn-default wishes-toggle" hidden>
+                  Lihat Semua Ucapan
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rsvp-gift-connector" aria-hidden="true"><span>✦</span></div>
+      </div>
+
+      <section id="fh5co-gift" class="invitation-section invitation-gift">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+              <span class="hero-kicker gift-heading__kicker">A TOKEN OF LOVE</span>
+              <h2 class="hero-subtitle gift-heading__title">Digital Gift</h2>
+            </div>
+          </div>
+          <div class="row animate-box">
+            <div class="col-md-8 col-md-offset-2">
+              <div class="invitation-card invitation-verse-card gift-card text-center">
+                <span class="prologue-corner prologue-corner--top-left" aria-hidden="true"></span>
+                <span class="prologue-corner prologue-corner--top-right" aria-hidden="true"></span>
+                <span class="prologue-corner prologue-corner--bottom-left" aria-hidden="true"></span>
+                <span class="prologue-corner prologue-corner--bottom-right" aria-hidden="true"></span>
+                <p class="gift-message">
+                  Doa, restu, dan kehadiran Anda adalah hadiah terindah bagi perjalanan kami.<br class="gift-desktop-break" />
+                  Namun, bagi yang berkenan berbagi tanda kasih, kami menyediakan<br class="gift-desktop-break" />
+                  pilihan untuk menyampaikannya secara digital.
+                </p>
+                <div class="gift-divider" aria-hidden="true"><span>✦</span></div>
+                <p class="gift-intro">
+                  Jika berkenan, detailnya dapat dibuka melalui tombol berikut.
+                </p>
+                <button type="button" id="toggleGiftDetails" class="btn btn-default btn-lg gift-toggle">
+                  Lihat Detail
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      </div><!-- /.rsvp-scene -->
+
+      <section id="fh5co-closing" class="invitation-section closing-story">
+        <div class="closing-story__bg" aria-hidden="true"></div>
+
+        <img class="closing-story__ornament closing-story__ornament--tl" src="images/end-ornamen.png" alt="" aria-hidden="true" decoding="async" />
+        <img class="closing-story__ornament closing-story__ornament--tr" src="images/end-ornamen.png" alt="" aria-hidden="true" decoding="async" />
+        <img class="closing-story__ornament closing-story__ornament--bl" src="images/end-ornamen.png" alt="" aria-hidden="true" decoding="async" />
+        <img class="closing-story__ornament closing-story__ornament--br" src="images/end-ornamen.png" alt="" aria-hidden="true" decoding="async" />
+
+        <img class="closing-story__silhouette closing-story__silhouette--tr" src="images/end-siluet-2.png" alt="" aria-hidden="true" decoding="async" />
+        <img class="closing-story__silhouette closing-story__silhouette--bl" src="images/end-siluet-1.png" alt="" aria-hidden="true" decoding="async" />
+
+        <img class="closing-story__leaf closing-story__leaf--left" src="images/rsvp-leaf.png" alt="" aria-hidden="true" decoding="async" />
+        <img class="closing-story__leaf closing-story__leaf--right" src="images/rsvp-leaf.png" alt="" aria-hidden="true" decoding="async" />
+        <img class="closing-story__leaf closing-story__leaf--low" src="images/rsvp-leaf.png" alt="" aria-hidden="true" decoding="async" />
+        <img class="closing-story__leaf closing-story__leaf--far" src="images/rsvp-leaf.png" alt="" aria-hidden="true" decoding="async" />
+
+        <img class="closing-story__light closing-story__light--left" src="images/end-light.png" alt="" aria-hidden="true" decoding="async" />
+        <img class="closing-story__light closing-story__light--right" src="images/end-light.png" alt="" aria-hidden="true" decoding="async" />
+        <img class="closing-story__light closing-story__light--low" src="images/end-light.png" alt="" aria-hidden="true" decoding="async" />
+        <img class="closing-story__light closing-story__light--far" src="images/end-light.png" alt="" aria-hidden="true" decoding="async" />
+
+        <div class="closing-story__content">
+          <div class="closing-story__divider closing-story__divider--top" aria-hidden="true"><span>✦</span></div>
+          <p class="closing-story__kicker">WITH ALL OUR HEARTS,</p>
+          <h2 class="closing-story__name">Arjuna &amp; Anisa</h2>
+          <p class="closing-story__copy">
+            Terima kasih telah hadir,<br />
+            mendoakan, dan menjadi bagian<br />
+            dari cerita kami.
+          </p>
+          <div class="closing-story__divider closing-story__divider--bottom" aria-hidden="true"><span>✦</span></div>
+        </div>
+      </section>
+
+      <footer id="fh5co-footer" role="contentinfo">
+        <div class="container">
+          <div class="row copyright">
+            <div class="col-md-12 text-center">
+              <p>
+                <small class="block">Terima kasih atas doa, perhatian, dan kehadiran Anda.</small>
+                <small class="block">Arjuna &amp; Anisa</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+
+    <div class="gototop js-top">
+      <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.countTo.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/magnific-popup-options.js"></script>
+    <script src="js/simplyCountdown.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+      (function () {
+      'use strict';
+    
+      // --- Auto-flip sekali saat section masuk viewport ---
+      function initMainCharacterFlip() {
+        var cards = document.querySelectorAll('.mc-card');
+        if (!cards.length) return;
+    
+        var flipped = [];
+    
+        function autoFlipCard(card, delay) {
+          setTimeout(function () {
+            card.classList.add('mc-is-flipped');
+            setTimeout(function () {
+              card.classList.remove('mc-is-flipped');
+            }, 1400);
+          }, delay);
+        }
+    
+        var observer = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              var card = entry.target;
+              var idx = Array.prototype.indexOf.call(cards, card);
+              if (flipped.indexOf(idx) === -1) {
+                flipped.push(idx);
+                autoFlipCard(card, idx * 260);
+              }
+            }
+          });
+        }, { threshold: 0.35 });
+    
+        cards.forEach(function (card) {
+          observer.observe(card);
+        });
+      }
+    
+      // --- Tap / click manual toggle ---
+      function initManualFlip() {
+        var cards = document.querySelectorAll('.mc-card');
+        cards.forEach(function (card) {
+          card.addEventListener('click', function () {
+            card.classList.toggle('mc-is-flipped');
+          });
+          card.addEventListener('touchend', function (e) {
+            e.preventDefault();
+            card.classList.toggle('mc-is-flipped');
+          });
+        });
+      }
+    
+      // --- Shimmer partikel looping ---
+      function initShimmer() {
+        var dots = document.querySelectorAll(
+          '.mc-shimmer-dot, .mc-shimmer-dot-2, .mc-shimmer-dot-3'
+        );
+        dots.forEach(function (dot, i) {
+          animateDot(dot, i * 800);
+        });
+      }
+    
+      function animateDot(dot, initialDelay) {
+        function pulse() {
+          setTimeout(function () {
+            dot.style.transition = 'opacity 0.6s ease';
+            dot.setAttribute('opacity', '0.9');
+            dot.style.opacity = '0.9';
+            setTimeout(function () {
+              dot.style.opacity = '0';
+              dot.setAttribute('opacity', '0');
+              setTimeout(pulse, 1800 + Math.random() * 2000);
+            }, 700);
+          }, initialDelay + Math.random() * 1000);
+        }
+        pulse();
+      }
+    
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', function () {
+          initMainCharacterFlip();
+          initManualFlip();
+          initShimmer();
+        });
+      } else {
+        initMainCharacterFlip();
+        initManualFlip();
+        initShimmer();
+      }
+    })();
+      var targetDate = new Date(2026, 9, 17);
+
+      simplyCountdown(".simply-countdown-one", {
+        year: targetDate.getFullYear(),
+        month: targetDate.getMonth() + 1,
+        day: targetDate.getDate(),
+        words: {
+          days: "hari",
+          hours: "jam",
+          minutes: "menit",
+          seconds: "detik",
+          pluralLetter: ""
+        }
+      });
+
+      (function () {
+        var body = document.body;
+        var cover = document.getElementById("invitation-cover");
+        var openButton = document.getElementById("openInvitation");
+        var guestName = document.getElementById("guestName");
+        var heroSection = document.getElementById("fh5co-header");
+        var heroIntro = document.querySelector(".hero-intro");
+        var prologueIntro = document.querySelector(".prologue-intro");
+        var chapterTwo = document.querySelector(".chapter-two");
+        var chapterTwoLandscape = document.querySelector(".chapter-two__landscape");
+        var doaSection = document.querySelector(".doa-section");
+        var moreUsSection = document.querySelector(".more-us-section");
+        var rsvpForm = document.getElementById("rsvpForm");
+        var rsvpName = document.getElementById("rsvp_name");
+        var rsvpNameHint = document.getElementById("rsvpNameHint");
+        var guestCodeField = document.getElementById("guest_code");
+        var submitRsvpButton = document.getElementById("submitRsvpButton");
+        var rsvpFeedbackModal = document.getElementById("rsvpFeedbackModal");
+        var rsvpFeedbackTitle = document.getElementById("rsvpFeedbackTitle");
+        var rsvpFeedbackMessage = document.getElementById("rsvpFeedbackMessage");
+        var rsvpFeedbackIcon = document.getElementById("rsvpFeedbackIcon");
+        var closeRsvpFeedback = document.getElementById("closeRsvpFeedback");
+        var giftToggle = document.getElementById("toggleGiftDetails");
+        var giftModal = document.getElementById("giftDetails");
+        var giftModalDialog = giftModal ? giftModal.querySelector(".gift-modal__dialog") : null;
+        var closeGiftModal = giftModal ? giftModal.querySelector(".gift-modal__close") : null;
+        var giftCopyStatus = giftModal ? giftModal.querySelector(".gift-copy-status") : null;
+        var giftPreviousBodyOverflow = "";
+        var invitationMusic = document.getElementById("invitationMusic");
+        var invitationSoundToggle = document.getElementById("invitationSoundToggle");
+        var rsvpFeedbackTimer = null;
+        var params = new URLSearchParams(window.location.search);
+        var guestKey = params.get("to");
+        var manualGuest = params.get("guest");
+        var wishesList = document.getElementById("wishesList");
+        var toggleWishesButton = document.getElementById("toggleWishes");
+        var wishStore = [];
+        var wishesExpanded = false;
+        var WISHES_COLLAPSED_COUNT = 5;
+        var googleSheetConfig = {
+          enabled: true,
+          sheetId: "1x6cGGlcZyBuwXyrqsxfw4hKJ7UqzcnCSRIW6tpxX7X8",
+          sheetName: "undangan_online",
+          wishesSheetName: "rsvp_responses"
+        };
+        var rsvpConfig = {
+          enabled: true,
+          endpoint: "https://script.google.com/macros/s/AKfycbwbh2AV5t7Y391MVeGKZxtvESryLAUIIMjIB8QjTYzqlF4bdnjeHUJgAU-Pvsbxjp6LTg/exec"
+        };
+        var guestList = {
+          "kholidah-zia-kurniana": "KHOLIDAH ZIA KURNIANA, S.Psi.",
+          "andi-keluarga": "Bapak Andi & Keluarga"
+        };
+
+        if (!cover || !openButton) {
+          return;
+        }
+
+        document.addEventListener("invitation:loader-hidden", function () {
+          cover.classList.add("is-ready");
+        }, { once: true });
+
+        function setGuestName(name) {
+          if (guestName && name) {
+            guestName.textContent = name;
+          }
+
+          if (rsvpName && name && name !== "Bapak/Ibu/Saudara/i") {
+            rsvpName.value = name;
+            rsvpName.setAttribute("readonly", "readonly");
+            if (rsvpNameHint) {
+              rsvpNameHint.textContent = "Nama terisi otomatis dari data undangan.";
+            }
+          } else if (rsvpName) {
+            rsvpName.removeAttribute("readonly");
+            if (rsvpNameHint) {
+              rsvpNameHint.textContent = "Silakan isi nama lengkap Anda.";
+            }
+          }
+        }
+
+        function normalizeValue(value) {
+          if (value === null || value === undefined) {
+            return "";
+          }
+
+          return String(value).trim();
+        }
+
+        function showRsvpFeedback(type, message) {
+          if (!rsvpFeedbackModal || !rsvpFeedbackTitle || !rsvpFeedbackMessage || !rsvpFeedbackIcon) {
+            return;
+          }
+
+          if (rsvpFeedbackTimer) {
+            window.clearTimeout(rsvpFeedbackTimer);
+            rsvpFeedbackTimer = null;
+          }
+
+          rsvpFeedbackModal.removeAttribute("hidden");
+          rsvpFeedbackModal.setAttribute("aria-hidden", "false");
+
+          if (type === "success") {
+            rsvpFeedbackTitle.textContent = "RSVP Berhasil";
+            rsvpFeedbackMessage.textContent = message;
+            rsvpFeedbackIcon.className = "rsvp-feedback-icon is-success";
+            rsvpFeedbackIcon.innerHTML = '<i class="icon-check2"></i>';
+            rsvpFeedbackTimer = window.setTimeout(function () {
+              hideRsvpFeedback();
+            }, 5000);
+          } else {
+            rsvpFeedbackTitle.textContent = "RSVP Belum Terkirim";
+            rsvpFeedbackMessage.textContent = message;
+            rsvpFeedbackIcon.className = "rsvp-feedback-icon is-error";
+            rsvpFeedbackIcon.innerHTML = '<i class="icon-cross"></i>';
+          }
+        }
+
+        function hideRsvpFeedback() {
+          if (!rsvpFeedbackModal) {
+            return;
+          }
+
+          if (rsvpFeedbackTimer) {
+            window.clearTimeout(rsvpFeedbackTimer);
+            rsvpFeedbackTimer = null;
+          }
+
+          rsvpFeedbackModal.setAttribute("hidden", "");
+          rsvpFeedbackModal.setAttribute("aria-hidden", "true");
+        }
+
+        function openGiftModal() {
+          if (!giftModal || !giftModalDialog) {
+            return;
+          }
+
+          giftPreviousBodyOverflow = body.style.overflow;
+          giftModal.removeAttribute("hidden");
+          giftModal.setAttribute("aria-hidden", "false");
+          body.style.overflow = "hidden";
+
+          if (closeGiftModal) {
+            closeGiftModal.focus();
+          }
+        }
+
+        function closeGiftDetailsModal() {
+          if (!giftModal) {
+            return;
+          }
+
+          giftModal.setAttribute("hidden", "");
+          giftModal.setAttribute("aria-hidden", "true");
+          body.style.overflow = giftPreviousBodyOverflow;
+
+          if (giftToggle) {
+            giftToggle.focus();
+          }
+        }
+
+        function fallbackCopyGiftAccount(account) {
+          var copyField = document.createElement("textarea");
+          copyField.value = account;
+          copyField.setAttribute("readonly", "");
+          copyField.style.position = "fixed";
+          copyField.style.opacity = "0";
+          body.appendChild(copyField);
+          copyField.select();
+
+          var copied = false;
+          try {
+            copied = document.execCommand("copy");
+          } catch (error) {
+            copied = false;
+          }
+
+          body.removeChild(copyField);
+          return copied;
+        }
+
+        function setGiftCopyFeedback(button, success) {
+          var label = button.querySelector("span");
+          if (label) {
+            label.textContent = success ? "✓ Tersalin" : "Gagal menyalin";
+          }
+          if (giftCopyStatus) {
+            giftCopyStatus.textContent = success
+              ? "Nomor rekening berhasil disalin."
+              : "Nomor rekening belum tersalin. Silakan pilih dan salin nomor secara manual.";
+          }
+
+          if (button.giftCopyTimer) {
+            window.clearTimeout(button.giftCopyTimer);
+          }
+          button.giftCopyTimer = window.setTimeout(function () {
+            if (label) {
+              label.textContent = "Salin";
+            }
+          }, 2500);
+        }
+
+        function copyGiftAccount(button) {
+          var account = button.getAttribute("data-account");
+          if (!account) {
+            setGiftCopyFeedback(button, false);
+            return;
+          }
+
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(account).then(function () {
+              setGiftCopyFeedback(button, true);
+            }).catch(function () {
+              setGiftCopyFeedback(button, fallbackCopyGiftAccount(account));
+            });
+          } else {
+            setGiftCopyFeedback(button, fallbackCopyGiftAccount(account));
+          }
+        }
+
+        function playInvitationMusic() {
+          if (!invitationMusic || !invitationMusic.querySelector("source")) {
+            return;
+          }
+
+          var playPromise = invitationMusic.play();
+
+          if (playPromise && typeof playPromise.then === "function") {
+            playPromise.catch(function () {});
+          }
+        }
+
+        function initPrologueReveal() {
+          if (!prologueIntro) {
+            return;
+          }
+
+          var prologueSection = prologueIntro.closest(".invitation-verse");
+
+          if (!("IntersectionObserver" in window)) {
+            prologueIntro.classList.add("is-revealed");
+            if (prologueSection) {
+              prologueSection.classList.add("is-revealed");
+            }
+            return;
+          }
+
+          var prologueObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                prologueIntro.classList.add("is-revealed");
+                if (prologueSection) {
+                  prologueSection.classList.add("is-revealed");
+                }
+                prologueObserver.unobserve(prologueIntro);
+              }
+            });
+          }, { threshold: 0.25 });
+
+          prologueObserver.observe(prologueIntro);
+        }
+
+        function initChapterTwoReveal() {
+          if (!chapterTwo) {
+            return;
+          }
+
+          if (!("IntersectionObserver" in window)) {
+            chapterTwo.classList.add("is-revealed");
+            return;
+          }
+
+          var chapterTwoObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                chapterTwo.classList.add("is-revealed");
+                chapterTwoObserver.unobserve(chapterTwo);
+              }
+            });
+          }, {
+            threshold: 0.22
+          });
+
+          chapterTwoObserver.observe(chapterTwo);
+        }
+
+        function initChapterTwoLandscapeReveal() {
+          if (!chapterTwoLandscape) {
+            return;
+          }
+
+          if (!("IntersectionObserver" in window)) {
+            chapterTwoLandscape.classList.add("is-visible");
+            return;
+          }
+
+          var landscapeObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                chapterTwoLandscape.classList.add("is-visible");
+                landscapeObserver.unobserve(chapterTwoLandscape);
+              }
+            });
+          }, {
+            threshold: 0.15
+          });
+
+          landscapeObserver.observe(chapterTwoLandscape);
+        }
+
+
+        // Wedding Du'a: satu kelas is-revealed untuk kartu, teks, dan layer
+        // langit saat section terlihat. Animasi latar tetap berbasis CSS.
+        function initDoaReveal() {
+          if (!doaSection) {
+            return;
+          }
+
+          if (!("IntersectionObserver" in window)) {
+            doaSection.classList.add("is-revealed");
+            return;
+          }
+
+          var doaObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                doaSection.classList.add("is-revealed");
+                doaObserver.unobserve(doaSection);
+              }
+            });
+          }, {
+            threshold: 0.15,
+            rootMargin: "0px 0px -12% 0px"
+          });
+
+          doaObserver.observe(doaSection);
+        }
+
+
+        // "A Little More Us": satu kelas is-revealed pada section untuk blok
+        // intro (judul + foto utama + ornamen + botanikal). Blok yang lebih
+        // bawah (kolase dan kalimat penutup) memakai initScrollReveal() agar
+        // animasinya muncul saat bagian itu benar-benar masuk layar.
+        function initMoreUsReveal() {
+          if (!moreUsSection) {
+            return;
+          }
+
+          if (!("IntersectionObserver" in window)) {
+            moreUsSection.classList.add("is-revealed");
+            return;
+          }
+
+          var moreUsObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                moreUsSection.classList.add("is-revealed");
+                moreUsObserver.unobserve(moreUsSection);
+              }
+            });
+          }, {
+            /* threshold 0 (bukan 0.15): section ini sangat tinggi, sehingga
+               rasio 15% dari tingginya bisa tidak pernah tercapai pada layar
+               pendek — intro akan diam-diam tetap opacity:0 (tampak kosong).
+               Dengan threshold 0, reveal cukup memicu saat tepi atas section
+               menyentuh layar, berapa pun tinggi section. */
+            threshold: 0,
+            rootMargin: "0px 0px -12% 0px"
+          });
+
+          moreUsObserver.observe(moreUsSection);
+        }
+
+
+        // Reveal bertahap mengikuti scroll: kelas ditambahkan ketika
+        // elemen sudah cukup terlihat, lalu elemen dibiarkan terlihat.
+        function initScrollReveal(selector, className) {
+          var items = Array.prototype.slice.call(document.querySelectorAll(selector));
+
+          if (!items.length) {
+            return;
+          }
+
+          if (!("IntersectionObserver" in window)) {
+            items.forEach(function (item) {
+              item.classList.add(className);
+            });
+            return;
+          }
+
+          var scrollObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add(className);
+                scrollObserver.unobserve(entry.target);
+              }
+            });
+          }, {
+            threshold: 0.2,
+            rootMargin: "0px 0px -8% 0px"
+          });
+
+          items.forEach(function (item) {
+            scrollObserver.observe(item);
+          });
+        }
+
+        // ---------------------------------------------------------
+        // RSVP + Ucapan & Doa — scene latar bersama (.rsvp-scene)
+        // Dua hal dijalankan di sini:
+        //   1. Reveal bertahap: scene saat masuk layar, lalu lanskap
+        //      di dasar scene di-reveal terpisah saat ia sendiri masuk
+        //      layar (karena scene lebih tinggi dari viewport).
+        //   2. Parallax lembut saat scroll: tiap lapisan memakai
+        //      `data-scene-depth` (rasio) dan `data-scene-max` (batas px)
+        //      dan ditulis lewat properti `translate` CSS — sengaja bukan
+        //      `transform`, supaya tidak bentrok dengan animasi reveal
+        //      yang memakai `transform`.
+        // ---------------------------------------------------------
+        function initRsvpScene() {
+          var scene = document.querySelector(".rsvp-scene");
+
+          if (!scene) {
+            return;
+          }
+
+          var layers = Array.prototype.slice.call(scene.querySelectorAll("[data-scene-depth]"));
+          var reduceMotion =
+            window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+          var sceneInView = false;
+          var ticking = false;
+
+          function renderParallax() {
+            ticking = false;
+
+            if (!sceneInView || !layers.length) {
+              return;
+            }
+
+            var viewHeight = window.innerHeight || document.documentElement.clientHeight;
+            var rect = scene.getBoundingClientRect();
+            // Jarak pusat scene terhadap pusat viewport. Berbanding lurus
+            // dengan kedalaman (depth), jadi lapisan jauh bergerak lebih
+            // banyak dan lapisan dekat hampir diam.
+            var offset = rect.top + rect.height / 2 - viewHeight / 2;
+
+            layers.forEach(function (layer) {
+              var depth = parseFloat(layer.getAttribute("data-scene-depth")) || 0;
+              var max = parseFloat(layer.getAttribute("data-scene-max"));
+              var y = offset * depth;
+
+              if (!isNaN(max)) {
+                y = Math.max(-max, Math.min(max, y));
+              }
+
+              layer.style.translate = "0px " + y.toFixed(2) + "px";
+            });
+          }
+
+          function requestParallax() {
+            if (ticking) {
+              return;
+            }
+
+            ticking = true;
+            window.requestAnimationFrame(renderParallax);
+          }
+
+          function observe(target, onEnter, options) {
+            if (!target) {
+              return null;
+            }
+
+            if (!("IntersectionObserver" in window)) {
+              onEnter();
+              return null;
+            }
+
+            var observer = new IntersectionObserver(function (entries) {
+              entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                  onEnter();
+                  observer.unobserve(target);
+                }
+              });
+            }, options);
+
+            observer.observe(target);
+            return observer;
+          }
+
+          observe(scene, function () {
+            scene.classList.add("is-revealed");
+          }, {
+            // threshold 0: scene lebih tinggi dari viewport, jadi rasio
+            // persen yang besar tidak akan pernah tercapai di layar pendek.
+            threshold: 0,
+            rootMargin: "0px 0px -8% 0px"
+          });
+
+          if (reduceMotion) {
+            return;
+          }
+
+          // Parallax hanya aktif ketika section mendekati viewport.
+          if ("IntersectionObserver" in window) {
+            var nearObserver = new IntersectionObserver(function (entries) {
+              entries.forEach(function (entry) {
+                sceneInView = entry.isIntersecting;
+                requestParallax();
+              });
+            }, { rootMargin: "25% 0px 25% 0px" });
+
+            nearObserver.observe(scene);
+          } else {
+            sceneInView = true;
+          }
+
+          window.addEventListener("scroll", requestParallax, { passive: true });
+          window.addEventListener("resize", requestParallax);
+          requestParallax();
+        }
+
+        function fetchGuestFromGoogleSheet(code) {
+          if (!googleSheetConfig.enabled || !googleSheetConfig.sheetId || googleSheetConfig.sheetId === "GANTI_DENGAN_SHEET_ID_ANDA" || !code) {
+            return Promise.resolve(null);
+          }
+
+          var endpoint =
+            "https://docs.google.com/spreadsheets/d/" +
+            googleSheetConfig.sheetId +
+            "/gviz/tq?sheet=" +
+            encodeURIComponent(googleSheetConfig.sheetName) +
+            "&tqx=out:json";
+
+          return fetch(endpoint)
+            .then(function (response) {
+              return response.text();
+            })
+            .then(function (text) {
+              var jsonText = text
+                .replace(/^[\s\S]*?google\.visualization\.Query\.setResponse\(/, "")
+                .replace(/\);\s*$/, "")
+                .trim();
+              var data = JSON.parse(jsonText);
+              var rows = (data.table && data.table.rows) || [];
+
+              for (var i = 0; i < rows.length; i += 1) {
+                var cells = rows[i].c || [];
+                var rowData = {
+                  no: normalizeValue(cells[0] && cells[0].v),
+                  code: normalizeValue(cells[1] && cells[1].v).toLowerCase(),
+                  guest_name: normalizeValue(cells[2] && cells[2].v),
+                  group_name: normalizeValue(cells[3] && cells[3].v),
+                  active: normalizeValue(cells[4] && cells[4].v).toUpperCase()
+                };
+
+                if (rowData.code === code.toLowerCase() && rowData.active === "TRUE") {
+                  return rowData.guest_name || null;
+                }
+              }
+
+              return null;
+            })
+            .catch(function () {
+              return null;
+            });
+        }
+
+        // Menyimpan seluruh ucapan yang berhasil dibaca dari Google Sheet,
+        // lalu menggambar ulang tampilan (5 terbaru / semua).
+        function renderWishes(items) {
+          if (!wishesList) {
+            return;
+          }
+
+          wishStore = (items || []).slice();
+
+          renderWishesView();
+        }
+
+        // Menggambar daftar dari wishStore saja (tanpa fetch ulang):
+        // collapsed = 5 ucapan terbaru, expanded = seluruh ucapan.
+        function renderWishesView() {
+          if (!wishesList) {
+            return;
+          }
+
+          if (!wishStore.length) {
+            wishesList.innerHTML = '<div class="wish-item wish-item--empty"><div class="wish-item__body"><p class="wish-message">Ucapan tamu akan muncul di sini setelah RSVP dikirim.</p><span class="wish-name">Menunggu ucapan pertama</span></div></div>';
+            updateWishesToggle();
+            return;
+          }
+
+          var visibleItems = wishesExpanded
+            ? wishStore
+            : wishStore.slice(0, WISHES_COLLAPSED_COUNT);
+
+          wishesList.innerHTML = visibleItems.map(function (item, index) {
+            return (
+              '<div class="wish-item" style="animation-delay:' + (Math.min(index, 6) * 0.06) + 's">' +
+                '<div class="wish-item__avatar">' + item.name.charAt(0) + '</div>' +
+                '<div class="wish-item__body">' +
+                  '<span class="wish-name">' + item.name + '</span>' +
+                  '<p class="wish-message">' + item.message + '</p>' +
+                '</div>' +
+              '</div>'
+            );
+          }).join('');
+
+          updateWishesToggle();
+        }
+
+        // Tombol "Lihat Semua Ucapan" hanya tampil bila ucapan > 5.
+        function updateWishesToggle() {
+          if (!toggleWishesButton) {
+            return;
+          }
+
+          if (wishStore.length > WISHES_COLLAPSED_COUNT) {
+            toggleWishesButton.removeAttribute("hidden");
+            toggleWishesButton.textContent = wishesExpanded
+              ? "Sembunyikan Ucapan"
+              : "Lihat Semua Ucapan";
+          } else {
+            toggleWishesButton.setAttribute("hidden", "");
+          }
+        }
+
+        function prependWish(name, message) {
+          if (!wishesList || !name || !message) {
+            return;
+          }
+
+          var emptyState = wishesList.querySelector(".wish-item");
+          if (emptyState && wishesList.children.length === 1) {
+            var emptyName = emptyState.querySelector(".wish-name");
+            if (emptyName && emptyName.textContent === "Menunggu ucapan pertama") {
+              wishStore = [];
+            }
+          }
+
+          // Ucapan baru selalu di paling atas dan tetap ikut dilacak pada
+          // expanded state (5 terbaru saat collapsed).
+          wishStore.unshift({
+            name: escapeHtml(name),
+            message: escapeHtml(message)
+          });
+
+          renderWishesView();
+        }
+
+        function escapeHtml(value) {
+          return String(value)
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;")
+            .replace(/'/g, "&#039;");
+        }
+
+        function loadGoogleSheetJsonp(sheetName) {
+          if (!googleSheetConfig.enabled || !googleSheetConfig.sheetId || !sheetName) {
+            return Promise.resolve(null);
+          }
+
+          return new Promise(function (resolve, reject) {
+            var callbackName = "__sheetCallback" + Date.now() + Math.floor(Math.random() * 1000);
+            var script = document.createElement("script");
+            var cleanedUp = false;
+
+            function cleanup() {
+              if (cleanedUp) {
+                return;
+              }
+
+              cleanedUp = true;
+              if (script.parentNode) {
+                script.parentNode.removeChild(script);
+              }
+              try {
+                delete window[callbackName];
+              } catch (error) {
+                window[callbackName] = undefined;
+              }
+            }
+
+            window[callbackName] = function (data) {
+              cleanup();
+              resolve(data);
+            };
+
+            script.onerror = function () {
+              cleanup();
+              reject(new Error("Gagal memuat data Google Sheet."));
+            };
+
+            script.src =
+              "https://docs.google.com/spreadsheets/d/" +
+              googleSheetConfig.sheetId +
+              "/gviz/tq?sheet=" +
+              encodeURIComponent(sheetName) +
+              "&tqx=responseHandler:" +
+              callbackName +
+              ";out:json;reqId:0&cachebust=" +
+              new Date().getTime();
+
+            document.body.appendChild(script);
+          });
+        }
+
+        function fetchWishesFromGoogleSheet() {
+          if (!googleSheetConfig.enabled || !googleSheetConfig.sheetId || !googleSheetConfig.wishesSheetName || !wishesList) {
+            return Promise.resolve([]);
+          }
+
+          return loadGoogleSheetJsonp(googleSheetConfig.wishesSheetName)
+            .then(function (data) {
+              var cols = (data.table && data.table.cols) || [];
+              var rows = (data.table && data.table.rows) || [];
+              var wishes = [];
+              // Struktur Google Sheet FINAL (5 kolom):
+              //   A Timestamp | B Guest Code | C Guest Name | D Attendance Status | E Wish Message
+              // Jadi default: guest name = c[2], wish message = c[4] (bukan c[6]).
+              var guestNameIndex = 2;
+              var wishMessageIndex = 4;
+
+              for (var c = 0; c < cols.length; c += 1) {
+                var columnLabel = normalizeValue((cols[c] && (cols[c].label || cols[c].id)) || "")
+                  .toLowerCase()
+                  .replace(/[\s_-]+/g, "");
+
+                if (
+                  columnLabel === "guestname" ||
+                  columnLabel === "nama" ||
+                  columnLabel === "namatamu"
+                ) {
+                  guestNameIndex = c;
+                }
+
+                if (
+                  columnLabel === "wishmessage" ||
+                  columnLabel === "ucapan" ||
+                  columnLabel === "doa" ||
+                  columnLabel === "message" ||
+                  columnLabel === "wish"
+                ) {
+                  wishMessageIndex = c;
+                }
+              }
+
+              for (var i = rows.length - 1; i >= 0; i -= 1) {
+                var cells = rows[i].c || [];
+                var guestNameValue = normalizeValue(cells[guestNameIndex] && cells[guestNameIndex].v);
+                var wishMessageValue = normalizeValue(cells[wishMessageIndex] && cells[wishMessageIndex].v);
+
+                if (guestNameValue && wishMessageValue) {
+                  wishes.push({
+                    name: escapeHtml(guestNameValue),
+                    message: escapeHtml(wishMessageValue)
+                  });
+                }
+              }
+
+              return wishes;
+            })
+            .catch(function () {
+              return [];
+            });
+        }
+
+        if (manualGuest) {
+          setGuestName(manualGuest);
+        } else if (guestKey) {
+          fetchGuestFromGoogleSheet(guestKey).then(function (sheetGuestName) {
+            setGuestName(sheetGuestName || guestList[guestKey] || "Bapak/Ibu/Saudara/i");
+          });
+        } else {
+          setGuestName("Bapak/Ibu/Saudara/i");
+        }
+
+        fetchWishesFromGoogleSheet().then(renderWishes);
+
+        if (guestCodeField && guestKey) {
+          guestCodeField.value = guestKey;
+        }
+
+        if (invitationMusic) {
+          invitationMusic.volume = 0.45;
+        }
+
+        if (invitationMusic && invitationSoundToggle) {
+          invitationSoundToggle.addEventListener("click", function () {
+            invitationMusic.muted = !invitationMusic.muted;
+            var shouldMute = invitationMusic.muted;
+            var label = shouldMute ? "Nyalakan suara" : "Matikan suara";
+
+            invitationSoundToggle.setAttribute("aria-pressed", String(shouldMute));
+            invitationSoundToggle.setAttribute("aria-label", label);
+            invitationSoundToggle.setAttribute("title", label);
+          });
+        }
+
+        initPrologueReveal();
+        initChapterTwoReveal();
+        initChapterTwoLandscapeReveal();
+        initDoaReveal();
+        initMoreUsReveal();
+
+        initScrollReveal(".chapter-two__countdown", "is-visible");
+        initScrollReveal(".chapter-two__events", "is-visible");
+        initScrollReveal(".chapter-two__map", "is-visible");
+        initScrollReveal(".wishes-shell", "is-visible");
+
+        // "A Little More Us": blok-blok yang jauh dari puncak section
+        // direveal per bagian supaya animasinya terlihat saat masuk layar.
+        // Blok navy ".memory-transition" sudah dihapus dari section ini;
+        // penggantinya adalah kalimat penutup ".more-us-closing".
+        initScrollReveal(".memory-collage", "is-visible");
+        initScrollReveal(".more-us-closing", "is-visible");
+        initScrollReveal(".closing-story", "is-revealed");
+
+        // Scene latar bersama RSVP + Ucapan (reveal + parallax scroll).
+        initRsvpScene();
+
+        openButton.addEventListener("click", function () {
+          cover.classList.add("is-opening");
+          cover.setAttribute("aria-hidden", "true");
+          body.classList.remove("invitation-locked");
+          if (heroIntro) {
+            heroIntro.classList.add("is-revealed");
+          }
+          playInvitationMusic();
+
+          if (heroSection) {
+            window.setTimeout(function () {
+              heroSection.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+              });
+            }, 120);
+          }
+
+          window.setTimeout(function () {
+            cover.classList.remove("is-visible");
+          }, 920);
+
+        });
+
+        if (rsvpForm) {
+          rsvpForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            if (!rsvpConfig.enabled || !rsvpConfig.endpoint || rsvpConfig.endpoint === "GANTI_DENGAN_URL_GOOGLE_APPS_SCRIPT") {
+              showRsvpFeedback("error", "URL Google Apps Script untuk RSVP belum diisi.");
+              return;
+            }
+
+            var formData = new FormData(rsvpForm);
+            var payload = new URLSearchParams();
+
+            formData.forEach(function (value, key) {
+              payload.append(key, value);
+            });
+
+            if (submitRsvpButton) {
+              submitRsvpButton.disabled = true;
+              submitRsvpButton.textContent = "Mengirim...";
+            }
+
+            fetch(rsvpConfig.endpoint, {
+              method: "POST",
+              body: payload
+            })
+              .then(function () {
+                var submittedName = formData.get("guest_name");
+                var submittedWish = formData.get("wish_message");
+
+                showRsvpFeedback("success", "Terima kasih, konfirmasi kehadiran Anda sudah tersimpan.");
+
+                if (submittedWish) {
+                  prependWish(submittedName, submittedWish);
+                }
+
+                rsvpForm.reset();
+
+                if (guestCodeField && guestKey) {
+                  guestCodeField.value = guestKey;
+                }
+
+                if (guestName && rsvpName && guestName.textContent !== "Bapak/Ibu/Saudara/i") {
+                  rsvpName.value = guestName.textContent;
+                  rsvpName.setAttribute("readonly", "readonly");
+                } else if (rsvpName) {
+                  rsvpName.value = "";
+                  rsvpName.removeAttribute("readonly");
+                }
+
+                window.setTimeout(function () {
+                  fetchWishesFromGoogleSheet().then(renderWishes);
+                }, 1500);
+              })
+              .catch(function () {
+                showRsvpFeedback("error", "Maaf, RSVP belum berhasil dikirim. Silakan coba lagi.");
+              })
+              .finally(function () {
+                if (submitRsvpButton) {
+                  submitRsvpButton.disabled = false;
+                  submitRsvpButton.textContent = "Kirim RSVP";
+                }
+              });
+          });
+        }
+
+        if (closeRsvpFeedback) {
+          closeRsvpFeedback.addEventListener("click", hideRsvpFeedback);
+        }
+
+        if (rsvpFeedbackModal) {
+          rsvpFeedbackModal.addEventListener("click", function (event) {
+            if (event.target === rsvpFeedbackModal || event.target.classList.contains("rsvp-feedback-backdrop")) {
+              hideRsvpFeedback();
+            }
+          });
+        }
+
+        if (toggleWishesButton) {
+          toggleWishesButton.addEventListener("click", function () {
+            wishesExpanded = !wishesExpanded;
+            renderWishesView();
+
+            if (!wishesExpanded && wishesList) {
+              wishesList.scrollTop = 0;
+            }
+          });
+        }
+
+        if (giftToggle && giftModal) {
+          giftToggle.addEventListener("click", function () {
+            openGiftModal();
+          });
+        }
+
+        if (closeGiftModal) {
+          closeGiftModal.addEventListener("click", closeGiftDetailsModal);
+        }
+
+        if (giftModal) {
+          giftModal.addEventListener("click", function (event) {
+            if (event.target === giftModal || event.target.classList.contains("gift-modal__backdrop")) {
+              closeGiftDetailsModal();
+            }
+          });
+
+          giftModal.addEventListener("click", function (event) {
+            var copyButton = event.target.closest(".gift-copy");
+            if (copyButton) {
+              copyGiftAccount(copyButton);
+            }
+          });
+
+          giftModal.addEventListener("keydown", function (event) {
+            if (event.key === "Escape") {
+              closeGiftDetailsModal();
+              return;
+            }
+
+            if (event.key !== "Tab" || !giftModalDialog) {
+              return;
+            }
+
+            var focusable = giftModalDialog.querySelectorAll(
+              'button:not([disabled]), a[href], [tabindex]:not([tabindex="-1"])'
+            );
+            var firstFocusable = focusable[0];
+            var lastFocusable = focusable[focusable.length - 1];
+
+            if (event.shiftKey && document.activeElement === firstFocusable) {
+              event.preventDefault();
+              lastFocusable.focus();
+            } else if (!event.shiftKey && document.activeElement === lastFocusable) {
+              event.preventDefault();
+              firstFocusable.focus();
+            }
+          });
+        }
+      })();
+    </script>
+  </body>
+</html>
