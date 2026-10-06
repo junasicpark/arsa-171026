@@ -4597,18 +4597,10 @@ body {
 .wish-item--empty {
   justify-content: center;
   padding: 22px 0 0;
-  border-bottom: 0;
 }
 
 .wish-item--empty .wish-item__body {
   text-align: center;
-}
-
-/* State kosong tidak memakai ekor bubble chat (itu penanda balon ucapan
-   tamu yang menempel pada avatar — di sini tidak ada avatar). */
-.wish-item--empty .wish-item__body::before,
-.wish-item--empty .wish-item__body::after {
-  content: none;
 }
 
 .wish-item__avatar {
@@ -9331,19 +9323,15 @@ body {
   flex-direction: column;
 
   align-items: center;
-  /* Kartu selalu di tengah vertikal: sisa ruang (bila min-height lebih
-     tinggi daripada konten) dibagi rata ke atas & bawah, sehingga jarak
-     sebelum kartu = jarak sesudah kartu. "safe center" jatuh ke
-     flex-start pada browser lama yang belum mendukung "safe"
-     (aman - tidak pernah mendorong kartu melewati tepi atas). */
-  justify-content: safe center;
+  justify-content: flex-start;
 
   text-align: center;
 
-  /* Atas & bawah memakai clamp yang SAMA agar jarak sebelum & sesudah
-     kartu selalu seimbang (dulu: 120px/12vw/180 vs 140px/14vw/190). */
-  padding-top: clamp(120px, 13vw, 185px);
-  padding-bottom: clamp(120px, 13vw, 185px);
+  padding-top: clamp(120px, 12vw, 180px);
+  /* Ruang bawah dikurangi (dulu clamp(190px, 26vw, 310px)): area kosong di
+     bawah kartu terasa terlalu luas. Sisa ruang tetap cukup untuk benang
+     penyambung (.doa-section__connector--bottom) + kabut .doa-section::after. */
+  padding-bottom: clamp(140px, 14vw, 190px);
 }
 
 
@@ -9458,9 +9446,7 @@ body {
 .doa-section__connector--bottom {
   bottom: clamp(18px, 2.4vh, 28px);
 
-  /* Disamakan dengan benang atas (dan base) supaya jarak visual
-     sebelum = sesudah kartu. Dulu lebih panjang (140px/18vw/300px). */
-  height: clamp(120px, 15vw, 240px);
+  height: clamp(140px, 18vw, 300px);
 
   transform-origin: center bottom;
 }
@@ -9887,8 +9873,8 @@ body {
 
   .doa-section__content {
     padding-top: clamp(110px, 16vw, 160px);
-    /* Atas & bawah SAMA agar kartu di tengah: jarak sebelum = jarak sesudah. */
-    padding-bottom: clamp(110px, 16vw, 160px);
+    /* Dulu clamp(170px, 26vw, 230px) — jarak bawah dikurangi. */
+    padding-bottom: clamp(130px, 16vw, 160px);
   }
 
 }
@@ -9924,8 +9910,8 @@ body {
 
     padding-top: clamp(96px, 18vw, 130px);
     padding-right: 20px;
-    /* Atas & bawah SAMA agar kartu di tengah: jarak sebelum = jarak sesudah. */
-    padding-bottom: clamp(96px, 18vw, 130px);
+    /* Dulu clamp(150px, 34vw, 200px) — jarak bawah dikurangi. */
+    padding-bottom: clamp(110px, 22vw, 140px);
     padding-left: 20px;
   }
 
@@ -9970,8 +9956,8 @@ body {
   .doa-section__content {
     padding-top: 92px;
     padding-right: 16px;
-    /* Atas & bawah SAMA agar kartu di tengah: jarak sebelum = jarak sesudah. */
-    padding-bottom: 92px;
+    /* Dulu 160px — jarak bawah dikurangi. */
+    padding-bottom: 118px;
     padding-left: 16px;
   }
 
@@ -10031,11 +10017,8 @@ body {
   isolation: isolate;
 
   /* Padding atas menampung jembatan warna dari Wedding Du'a + ornamen
-     sudut Chapter Two + botanikal, supaya tidak ada yang menimpa judul.
-     Dipadatkan (200→160px) supaya celah kartu Du'a → konten berikutnya
-     sama dengan celah sebelumnya (padding doa atas = bawah); overlap
-     ornamen ke judul tetap di sisi (±109px, hanya di sudut). */
-  padding: 160px 0 0;
+     sudut Chapter Two + botanikal, supaya tidak ada yang menimpa judul. */
+  padding: 200px 0 0;
 
   /* Palet yang sama dengan .chapter-two (alas + warna teks) supaya
      section ini terbaca sebagai bagian dari lembar parchment yang sama. */
@@ -10204,10 +10187,8 @@ body {
 
 .more-us-ornament {
   /* Dinaikkan dari 60px supaya tidak bertabrakan dengan jembatan warna
-     di tepi atas section ini. Dipadatkan (90→50px) bersama padding-top
-     section (200→160px) supaya jarak kartu Du'a ke konten berikutnya
-     sama dengan jarak sebelumnya — overlap ke judul tetap ±89px. */
-  top: 50px;
+     di tepi atas section ini. */
+  top: 90px;
 }
 
 /* Rentang tablet (769–1100px): kolom teks intro lebih sempit sehingga
@@ -10905,19 +10886,17 @@ body {
        Ornamen di mobile memakai lebar dari media query Chapter Two
        (210px @<=768, 175px @<=480) sehingga tingginya ±140px / ±117px;
        `top` ornamen diatur di bawah supaya ujungnya berhenti sebelum
-       judul mulai. Dipadatkan (200→160px) mengikuti base desktop supaya
-       celah kartu Du'a → konten berikutnya = celah sebelumnya. */
-    padding-top: 160px;
+       judul mulai. */
+    padding-top: 200px;
   }
 
 
   /* ---------- Ornamen ---------- */
 
   /* Ornamen dinaikkan mendekati tepi atas (base: 120px) supaya sisa
-     ruang kosong di atas judul tetap wajar di layar sempit. Ikut
-     dipadatkan (105→65px) mengikuti base desktop. */
+     ruang kosong di atas judul tetap wajar di layar sempit. */
   .more-us-ornament {
-    top: 65px;
+    top: 105px;
   }
 
 
@@ -12653,13 +12632,10 @@ body {
 
   .doa-section__content {
     min-height: min(100vh, 900px);
-    /* Sisa ruang min-height dibagi rata ke atas & bawah (bukan
-       flex-start) supaya kartu berada di tengah dan jarak atas =
-       jarak bawah pada seluruh rentang tablet. */
-    justify-content: safe center;
-    padding-top: clamp(108px, 13vw, 155px);
+    justify-content: flex-start;
+    padding-top: clamp(104px, 13vw, 150px);
     padding-right: 24px;
-    padding-bottom: clamp(108px, 13vw, 155px);
+    padding-bottom: clamp(110px, 13vw, 155px);
     padding-left: 24px;
   }
 
@@ -12672,14 +12648,11 @@ body {
   }
 
   .doa-section__connector {
-    /* Diperpanjang mengikuti kartu yang kini di tengah (safe center):
-       ujung luar tetap memudar di dalam section, ujung dalam menembus
-       balik kartu sehingga benang tidak terputus di tablet portrait. */
-    height: clamp(250px, 30vw, 340px);
+    height: clamp(120px, 15vw, 240px);
   }
 
   .doa-section__connector--bottom {
-    height: clamp(250px, 30vw, 340px);
+    height: clamp(140px, 18vw, 300px);
   }
 
   .doa-section__transliteration {
@@ -12701,14 +12674,11 @@ body {
      --------------------------------------------------------- */
 
   .more-us-section {
-    /* Dipadatkan (210→170px) mengikuti base desktop supaya celah kartu
-       Du'a → konten berikutnya = celah sebelumnya. */
-    padding-top: 170px;
+    padding-top: 210px;
   }
 
   .more-us-ornament {
-    /* Ikut dipadatkan (70→30px) mengikuti base desktop. */
-    top: 30px;
+    top: 70px;
     width: min(200px, 19vw);
   }
 
@@ -13078,8 +13048,8 @@ body {
   }
 
   .doa-section__content {
-    padding-top: clamp(96px, 11vw, 130px);
-    padding-bottom: clamp(96px, 11vw, 130px);
+    padding-top: clamp(92px, 11vw, 130px);
+    padding-bottom: clamp(100px, 11vw, 130px);
   }
 
   .more-us-intro {

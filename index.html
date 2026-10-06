@@ -56,13 +56,13 @@
   <body class="invitation-locked">
     <div class="fh5co-loader">
       <div class="invitation-loader__inner">
-        <span class="invitation-loader__kicker">Wedding Invitation</span>
+        <span class="invitation-loader__kicker">Our Wedding Story</span>
         <img
           class="invitation-loader__logo"
           src="images/logo_white.webp"
           alt="Logo Arjuna dan Anisa"
         />
-        <p class="invitation-loader__text">Sedang menyiapkan hari bahagia Arjuna &amp; Anisa</p>
+        <p class="invitation-loader__text">Sedang menyiapkan hari bahagia <br/> Arjuna &amp; Anisa</p>
         <div class="invitation-loader__dots">
           <span></span>
           <span></span>
@@ -132,8 +132,10 @@
         </div>
 
         <p class="invitation-cover__message">
-          Di antara langit biru dan angin yang berhembus pelan,<br/>
-          sebuah kisah kecil akhirnya memulai perjalanannya.
+          Di antara langit biru dan angin<span class="invitation-cover__message-desktop-inline"> yang</span><br class="invitation-cover__message-mobile-break" />
+          <span class="invitation-cover__message-mobile-inline">yang </span>berhembus pelan,<br />
+          sebuah kisah kecil akhirnya memulai<br class="invitation-cover__message-mobile-break" />
+          perjalanannya.
         </p>
 
         <button
@@ -2059,8 +2061,7 @@
                 <div class="wishes-list" id="wishesList">
                   <div class="wish-item wish-item--empty">
                     <div class="wish-item__body">
-                      <p class="wish-message">Ucapan tamu akan muncul di sini setelah RSVP dikirim.</p>
-                      <span class="wish-name">Menunggu ucapan pertama</span>
+                      <p class="wish-message">Belum ada Ucapan</p>
                     </div>
                   </div>
                 </div>
@@ -2869,7 +2870,7 @@
           }
 
           if (!wishStore.length) {
-            wishesList.innerHTML = '<div class="wish-item wish-item--empty"><div class="wish-item__body"><p class="wish-message">Ucapan tamu akan muncul di sini setelah RSVP dikirim.</p><span class="wish-name">Menunggu ucapan pertama</span></div></div>';
+            wishesList.innerHTML = '<div class="wish-item wish-item--empty"><div class="wish-item__body"><p class="wish-message">Belum ada Ucapan</p></div></div>';
             updateWishesToggle();
             return;
           }
@@ -2914,12 +2915,8 @@
             return;
           }
 
-          var emptyState = wishesList.querySelector(".wish-item");
-          if (emptyState && wishesList.children.length === 1) {
-            var emptyName = emptyState.querySelector(".wish-name");
-            if (emptyName && emptyName.textContent === "Menunggu ucapan pertama") {
-              wishStore = [];
-            }
+          if (wishesList.querySelector(".wish-item--empty")) {
+            wishStore = [];
           }
 
           // Ucapan baru selalu di paling atas dan tetap ikut dilacak pada
@@ -3036,7 +3033,12 @@
                 var guestNameValue = normalizeValue(cells[guestNameIndex] && cells[guestNameIndex].v);
                 var wishMessageValue = normalizeValue(cells[wishMessageIndex] && cells[wishMessageIndex].v);
 
-                if (guestNameValue && wishMessageValue) {
+                if (
+                  guestNameValue &&
+                  wishMessageValue &&
+                  guestNameValue.toLowerCase() !== "guest_name" &&
+                  wishMessageValue.toLowerCase() !== "wish_message"
+                ) {
                   wishes.push({
                     name: escapeHtml(guestNameValue),
                     message: escapeHtml(wishMessageValue)
